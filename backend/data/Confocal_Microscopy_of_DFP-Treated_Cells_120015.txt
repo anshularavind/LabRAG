@@ -1,0 +1,74 @@
+Mar 21, 2025
+Confocal Microscopy of DFP-Treated Cells
+DOI
+dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+Elias Adriaenssens
+Sascha Martens lab, University of Vienna, Max Perutz Labs - Vienna
+Elias Adriaenssens
+Sascha Martens lab, University of Vienna, Max Perutz Labs - ...
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+Protocol Citation: Elias Adriaenssens 2025. Confocal Microscopy of DFP-Treated Cells. protocols.io
+https://dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: February 05, 2025
+Last Modified: March 21, 2025
+Protocol Integer ID: 120015
+Keywords: ASAPCRN
+Funders Acknowledgements:
+Aligning Science Across Parkinson’s (ASAP)
+Grant ID: ASAP-000350
+Marie Skłodowska-Curie MSCA Postdoctoral fellowship
+Grant ID: 101062916
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+March 21, 2025
+1/3
+
+Abstract
+This protocol details the confocal microscopy of DFP-Treated cells after fixation and staining.
+Materials
+Bovine Serum Albumin [BSA] Fisher Scientific Catalog #9048-46-8
+DAPI Fluoromount-G® Southern Biotech Catalog #0100-20
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+March 21, 2025
+2/3
+
+1
+Seed the cells on glass coverslips (12 mm #1.5) at a concentration of 120,000 cells/well,
+and after treatment with DFP for 
+24:00:00 , fix in 100% methanol for 
+00:20:00
+at 
+-20 °C .
+2
+After washing with PBS, block the samples with 5% (v/v) BSA (9048-46-8, Sigma-
+Aldrich) diluted in PBS for 
+01:00:00  at 
+Room temperature .
+3
+Dilute the primary and secondary antibodies in 5% BSA and incubate for 
+01:00:00
+at 
+Room temperature  with three PBS washing steps in between.
+4
+Mount the cells on microscopy slides in DAPI Fluoromount-G mounting medium (0100-
+20, Southern Biotech), which stains the nuclei, add a cover glass, and store at 
+4 °C
+until use.
+5
+Perform the confocal microscopy with a Zeiss LSM700 laser scanning confocal
+microscopy with Plan-Apochromat 40×/1.30 Oil DIC, WD 0.21 mm objective or Zeiss
+LSM900 with Airyscan 2 confocal super-resolution microscopy with Plan-Apochromat
+63×/1.4 Oil DIC, WD 0.19 mm objective.
+1d 0h 20m
+1h
+1h
+Procedure
+1d 2h 20m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e9blk5/v1
+March 21, 2025
+3/3

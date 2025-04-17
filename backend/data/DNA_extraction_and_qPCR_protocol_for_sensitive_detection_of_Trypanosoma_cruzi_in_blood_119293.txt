@@ -1,0 +1,388 @@
+Apr 16, 2025
+DNA extraction and qPCR protocol for sensitive detection of Trypanosoma
+cruzi in blood
+DOI
+dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+Brooke E. White , Rick Tarleton
+University of Georgia
+Brooke E. White
+University of Georgia
+1
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+Protocol Citation: Brooke E. White, Rick Tarleton 2025. DNA extraction and qPCR protocol for sensitive detection of
+Trypanosoma cruzi in blood. protocols.io https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+Manuscript citation:
+White Brooke E, Hodo Carolyn L, Hamer Sarah A, Saunders Ashley B, Laucella Susana A, Hall Daniel B, Tarleton Rick L (2025) Serial
+‘deep-sampling’ PCR of fragmented DNA reveals the wide range of Trypanosoma cruzi burden among chronically infected hosts and
+allows accurate monitoring of parasite load following treatment eLife 14:RP104547
+https://doi.org/10.7554/eLife.104547.1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: January 29, 2025
+Last Modified: April 16, 2025
+Protocol Integer ID: 119293
+Keywords: Trypanosoma cruzi, PCR, Chagas disease, deep-sampling, qPCR, DNA extraction, fragmentation
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+1/11
+
+Funders Acknowledgements:
+National Institutes of Health
+Grant ID: R03 AI166504
+Abstract
+This protocol summarizes all steps for "deep-sampling" DNA samples extracted from blood that is screened for
+presence of Trypanosoma cruzi. Through a combination of careful handling, large 384 well capacity qPCR
+instruments, and DNA fragmentation, this protocol allows highly sensitive detection of the agent that causes
+Chagas disease.
+Guidelines
+Contamination Precautions: All steps should be performed in dedicated Biosafety Cabinet. All equipment should
+be reserved for this use only and not shared between other projects or areas of the lab.
+Spray work surface with 70% ethanol and apply UV light to cabinet at least 15 minutes before beginning work. 
+Use LookOut DNA Erase spray to supplement cleaning cabinet surface. 
+Using multichannel pipettes is an essential part of contamination control for our protocol. When 384 well plates
+are used, pipetting 96 wells at one time is preferred (we like the Integra mini 96). 
+All components (primers, probes, itaq mix) for qPCR master mix should be aliquoted into single use tubes when
+possible to avoid repeated opening of the same tube. This also prevents multiple freeze/thaw cycles for qPCR
+components.
+When working with large amounts of T. cruzi DNA - such as when preparing amplification standards- prepare and
+process these separately from normal samples.  Processing samples with very high amounts of T. cruzi DNA
+(higher than would normally be encountered in host blood) poses a high risk for contamination of other samples,
+even when taking all precautions outlined here. Do not extract DNA from high parasite standard samples at the
+same time as blood samples being tested for parasite DNA.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+2/11
+
+Materials
+Kits:
+Omega Biotek E.Z.N.A. Blood DNA Maxi Kit (item # D2492-03)
+Chemicals and reagents:
+PBS (Gibco 10010023)
+100 % ethanol
+LookOut DNA Erase spray
+BioRad iTaq Universal Probes Supermix
+Nuclease free water (Ambion AM9937)
+Primers
+Taqman probes
+IAC (g-block from IDT)
+Consumables and other material:
+50 mL conical tubes
+1.5 mL snap cap tubes
+0.5 mL snap cap tubes
+96-Well Polypropylene PCR Plates, Low Profile, Thin Wall, Skirted, White/Clear
+or Hard-Shell 384-Well PCR Plates, thin wall, skirted, clear/white #HSP3805
+Pipette basins
+Microseal 'B' PCR Plate Sealing Film, adhesive, optical #MSB1001
+Equipment:
+Nanodrop
+vortex mixer
+pipettes and appropriate filter tips
+Biosafety cabinet (UV sterilization)
+swing bucket centrifuge with capacity for 15ml and 50ml conical tubes
+qPCR software Bio-Rad CFX Manager Software (version 3.1)
+Shake-N-Bake instrument set to 70°C (other incubator equipment can also work here: it just needs to be able to
+reach 70°C and have a moveable platform to mix samples during incubation) 
+C1000 Touch Bio-Rad CFX96 real-time PCR detection system or
+CFX Opus 384 Real-Time PCR System (#12011452)
+Bio-rad mini chiller with variable speed pump (170-3654)
+Branson SFX250 Sonifier with support stand and converter clamp
+3 inch Cuphorn attachment
+Integra Mini 96 pipettor
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+3/11
+
+Before start
+Setting up a dedicated work space inside a Type II Biosafety Cabinet away from common pathogen DNA
+producing parts of the lab is key. Using this dedicated clean space and following the contamination prevention
+guidelines described in this protocol have enabled us to extract hundreds of DNA samples and run thousands of
+pcr reactions while avoiding cross contamination.
+Note: See "Guidelines" section of this protocol for more details on contamination prevention.
+1. Pre-heat Shake-N-Bake (or similar incubator) to 70°C. 
+2. Place 50 mL conical tube of elution buffer in incubator.
+3. Turn on cuphorn chiller to pre-chill at 4°C.
+4. Prepare all reagents for DNA extraction. Add isopropanol and ethanol to respective buffers as directed in
+E.Z.N.A. maxi kit.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+4/11
+
+1
+Take 3-10 mL blood freshly collected in K2EDTA (purple top) blood collection tubes
+preserved on ice and centrifuge at 2000 g for 15 minutes to separate plasma from blood
+cells.
+Note: If blood is previously separated and frozen, thaw completely before starting
+extraction.
+2
+Transfer plasma layer to storage tube(s) with pre-printed labels detailing sample
+information and date and store at -80 for use as needed.
+3
+DNA Extraction Part 1 (Lysis)
+3.1
+Transfer the cell pellet from blood into a nuclease-free 50 mL conical tube and bring the
+volume up to 10mL with PBS
+Note: You can use plasma, whole blood, or the cell pellet here but we have found the cell
+pellet to be the most sensitive. 
+3.2
+Add 250 μL Proteinase K solution (included with kit) 
+3.3
+Vortex to mix well.
+Note: Tubes should be tightly closed before vortexing.
+3.4
+Add 10.2 mL BL Buffer (included with kit).
+3.5
+Add 20 μL RNase A (Included with kit).
+3.6
+Vortex to mix thoroughly.
+3.7
+Incubate at 
+70 °C   in Shake-N-Bake incubator for 30 minutes, vortexing the tube
+once at the halfway point.  
+Note: Shaker platform should be on medium rocking speed during incubation.
+15m
+15m
+30m
+DNA extraction
+2h 3m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+5/11
+
+4
+DNA Extraction Part 2 (DNA isolation)
+4.1
+Add 10.3 mL 100% ethanol to the lysed blood mixture and vortex to mix.
+4.2
+Insert a column into a 50mL collection tube, both from the kit.
+4.3
+Transfer the lysed sample to the column, including any precipitates. 
+4.4
+Centrifuge column and tube at 4,000 rcf for 5 minutes.
+4.5
+Repeat Steps 4.3 + 4.4 until entire sample is transferred. Each transfer will be
+approximately 15 mL.
+4.6
+Discard the filtrate in the tube, retaining the collection tube.
+4.7
+Add 5 mL HBC Buffer (included with kit) to the column.
+Note: HBC Buffer must be diluted w/ isopropanol before use.
+4.8
+Centrifuge at 4,000 rcf for 3 minutes.
+4.9
+Discard the filtrate and retain the collection tube.
+4.10
+Add 15 mL DNA Wash Buffer (included with kit) to the column.
+Note: Wash Buffer must be diluted w/ethanol before use.
+4.11
+Centrifuge at 4,000 rcf for 5 minutes.
+4.12
+Discard filtrate and reuse the collection tube.
+5m
+5m
+3m
+5m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+6/11
+
+4.13
+Add 15 mL DNA Wash Buffer for a second wash step.
+4.14
+Centrifuge at 4,000 rcf for 5 minutes.
+4.15
+Discard filtrate and reuse the collection tube.
+4.16
+Centrifuge the empty column at 4,000 rcf for 10 minutes to dry the column.
+Note: This is critical to remove any trace ethanol that could interfere with downstream
+applications.
+4.17
+Transfer the column into a new nuclease-free 50 mL tube
+Note: Conical tube not provided with kit
+4.18
+Dry the column further at 
+70 °C  for 10 minutes inside the Shake-N-Bake incubator.
+4.19
+Wipe down the inside of the centrifuge with bleach followed by water to prevent
+corrosion. 
+Buckets and bucket inserts should also be washed thoroughly during this time. 
+Note: This step is important for contamination prevention.
+4.20
+Add 500 μL HOT (70°C) Elution Buffer (included with kit) directly to the filter inside the
+column.
+4.21
+Let sit at room temperature for 3-5 minutes.
+4.22
+Centrifuge at 4,000 rcf for 5 minutes.
+4.23
+Transfer eluted volume back onto the filter inside the column and add 150 μL fresh
+Elution Buffer.
+4.24
+Let sit at room temperature for 3-5 minutes.
+5m
+10m
+10m
+5m
+5m
+5m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+7/11
+
+4.25
+Centrifuge at 4,000 rcf for 5 minutes.
+4.26
+Transfer eluted material into nuclease-free 1.5 mL microcentrifuge tube.
+4.27
+Measure DNA quantity.
+4.28
+Store eluted DNA at -20°C (or 4°C if planning PCR soon).
+5
+Wrap 1.5 mL microcentrifuge tubes containing extracted DNA in parafilm
+5.1
+Place samples in floating foam rack
+5.2
+Place in chilled cuphorn
+5.3
+Set sonifier to continuous mode with a time interval of 50 seconds and 60% amplitude
+5.4
+Start sonifier and repeat sonication 5 times for a total of 5 cycles of 50 seconds with
+60% amplitude 
+5.5
+Place samples back on ice and continue preparations for qPCR
+6
+After fragmenting, dilute DNA to desired concentration (200 ng/µl) in ultrapure water.
+Preferably in 96 well plates to make transfer to qpcr plate easier.
+7
+Recipe for master mix for each pcr plate
+5m
+30m
+20m
+DNA Fragmentation with Cuphorn Sonication
+30m
+qPCR SETUP
+3h
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+8/11
+
+Component
+Volume per
+20µl reaction
+Volume per 96
+well plate   (106
+reactions)
+premix itaq
+univeral probe
+mix
+10
+1060
+Cruzi 1 primer
+(10 µM)
+1.5
+159
+Cruzi 2 primer
+(10 µM)
+1.5
+159
+IAC primer FW
+(10 µM)
+0.2
+21.2
+IAC primer Rev
+(10 µM)
+0.2
+21.2
+Cruzi 3 probe
+0.1
+10.6
+IAC probe
+0.1
+10.6
+Water
+0.4
+42.4
+8
+Add 14 µl mastermix + 1 µl IAC (25 pg/ µl) + 5 µl diluted sample DNA to each well
+8.1
+Include no template controls (NTC) and a sample with known T.cruzi DNA concentration
+in each plate.
+Note: For our typical assay, we run samples in 384 well plates and include 16 NTC
+reactions in each plate.
+8.2
+Spin down briefly before beginning cycler program.
+9
+Follow cycling conditions listed below. Be sure to select "all channels" when running
+protocol
+10
+PCR
+temperature
+time
+95
+3 min
+95
+15 sec
+A
+B
+C
+10m
+2h
+A
+B
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+9/11
+
+58
+1 min
+repeat steps
+2 and 3 x50
+conditions for Bio Rad Opus 384
+11
+Export program file at the end of protocol and analyze using CFX Manager software
+12
+Component
+sequence
+Cruzi 1
+ASTCGGCTGATCGTTTTCGA
+Cruzi 2
+AATTCCTCCAAGCAGCGGATA
+IAC F 
+ACCGTCATGGAACAGCACGTA
+IAC R 
+CTCCCGCAACAAACCCTATAAAT
+Cruzi3 probe
+5'-Fam-CACACACTGGACACCAA-NFQ-MGB-3'
+IAC probe 
+5’ -VIC-AGCATCTGTTCTTGAAGGT-NFQ-MGB-3’
+Primer and probe details
+12.1
+IAC (Internal
+Amplification control)
+(g-block from IDT) 
+TGTTCTTAAAGTAACCGTCATGGAACAGCACGTACCGATTTAT
+AAGATTGCTGGAGAAATGACTGGATTTGGAGCATCTGTTCTTG
+AAGGTGTTTTAGCTTTCGTCTTGGTTTATACTGTGTTCACGGC
+TAGCGATCCCAGACGTGGGCTACCTTTAGCAGTGGGACCTATA
+TTTATAGGGTTTGTTGCGGGAGCCAATGTTCTAGCCGC
+IAC details
+A
+B
+A
+B
+A
+B
+Supplementary Information
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+10/11
+
+Protocol references
+* Cruzi 1/2/3 primers/probe are from Duffy et al 2009, 2013 PLoS NTD, as originally from Piron et al 2007
+Acta Trop; IAC primers/probe are from Duffy et al 2009, 2013 PLoS NTD
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
+April 16, 2025
+11/11

@@ -1,0 +1,146 @@
+Mar 11, 2025
+BD FACSDiscover S8 - Bi-weekly Maintenance and
+Cleaning Protocol
+This protocol is a draft, published without a DOI.
+Daniel Gimenes
+European Molecular Biology Laboratory (EMBL)
+Daniel Gimenes
+European Molecular Biology Laboratory (EMBL)
+1
+1
+Protocol Citation: Daniel Gimenes 2025. BD FACSDiscover S8 - Bi-weekly Maintenance and Cleaning Protocol. protocols.io
+https://protocols.io/view/bd-facsdiscover-s8-bi-weekly-maintenance-and-clean-d4w48xgw
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: In development
+We are still developing and optimizing this protocol
+Created: February 28, 2025
+Last Modified: March 11, 2025
+Protocol Integer ID: 123580
+Keywords: BD, FACSDiscover S8, Imaging, Cell sorting, Flow Cytometry, Maintenance
+1/5
+
+Disclaimer
+DISCLAIMER – FOR INFORMATIONAL PURPOSES ONLY; USE AT YOUR OWN RISK
+The protocol content here is for informational purposes only and does not constitute legal, medical, clinical,
+or safety advice, or otherwise; content added to protocols.io is not peer reviewed and may not have
+undergone a formal approval of any kind. Information presented in this protocol should not substitute for
+independent professional judgment, advice, diagnosis, or treatment. Any action you take or refrain from
+taking using or relying upon the information presented here is strictly at your own risk. You agree that
+neither the Company nor any of the authors, contributors, administrators, or anyone else associated with 
+protocols.io, can be held responsible for your use of the information contained in or linked to this protocol
+or any of our Sites/Apps and Services.
+Abstract
+This Standard Operation Procedure is intended to guide the facility staff to perform scheduled maintenance and
+cleaning of the instrument BD FACSDiscover S8
+.
+Guidelines
+This protocol should be followed:
+Preventively every 15 days.
+After running potentially bacterial loaded samples.
+When a bacterial/fungal contamination is detected in the weekly assessment.
+Perform the steps subsequently unless otherwise stated.
+Materials
+1. Autoclaved and mounted sheath-tank (with the sensor).
+2. Autoclaved lab kitchen distilled H2O bottles.
+3. Cleaning box.
+4. Incidin Foam.
+5. 70% Ethanol.
+6. Distilled H2O in a 50 mL tube.
+7. FACS Clean.
+8. MAAX Windus C2.
+9. O-ring lube.
+10. Paper towel.
+11. Long Q-tips.
+2/5
+
+Protocol materials
+MAXX Windus C2 ECOLAB Catalog #9084640
+Step 7.2
+Incidin Foam ECOLAB Catalog #3046010
+In 3 steps
+FACSClean Becton Dickinson (BD) Catalog #340345
+Step 3.1
+Safety warnings
+Handle FACSClean carefully. It should't enter in contact with the skin and eyes (wear gloves, lab coat
+and glasses) and it ruins colorful clothes.
+Before start
+Be sure to wear gloves and lab coat at all times! 
+General rule: spray 70% ethanol in all connectors before plugging any tubing!
+3/5
+
+1
+Switch on the PC, the instrument and then the FACSChorus software
+2
+Pull the fluidics cart, unplug the waste tank, discard it's contents and reconnect it
+3
+Go to: Run Extended Fluidics Startup
+3.1
+On the step 4, fill the water bottle with 
+FACSClean Becton Dickinson (BD) Catalog #340345
+ instead of distilled H2O.
+Wait for 
+00:15:00 and then proceed to the next step
+Safety information
+Wear protective clothes, gloves and glasses every time FACSClean is handled in this
+protocol.
+3.2
+On step 5, don't connect the sheath tank!
+4
+Prepare the sheath tank for autoclaving and send it immediately to the lab kitchen
+5
+Rinse the distilled H2O bottle to remove the FACSClean, then fill all bottles with its
+respective solutions
+6
+Go to Cytometer: System Startup - Prepare for aseptic sort
+7
+In the meantime of the Aseptic cleaning, remove the parts for cleaning and put them in
+the Cleaning Compartment box.
+7.1
+Spray Incidin Foam on the following parts: tube holder and splash shield
+7.2
+Spray carefully the entire sort chamber (use first 
+MAXX Windus C2 ECOLAB Catalog #9084640
+ to remove the salt crystals, then
+after some minutes follow with 70% Ethanol) and dry it with soft tissue paper.
+15m
+4/5
+
+8
+Clean the table and surroundings of the sorter with 
+Incidin Foam ECOLAB Catalog #3046010
+9
+On the last step, put the newly autoclaved and fully filled sheath tank in the fluidics cart.
+Connect the air connection to the sheath tank. Connect the sheath tank sensor.
+10
+Change the connections from the clean port to the sheath tank. Plug the bypassed
+connections to the sheath filter. Start the last step.
+11
+After the Aseptic Cleaning is done, remove the closed loop nozzle and put into the 50 mL
+tube containing DI H2O.
+11.1
+Remove the nozzle lock, put into the Clean Compartment box and spray 
+Incidin Foam ECOLAB Catalog #3046010
+ over it.
+11.2
+Soak Q-tips with 
+Incidin Foam ECOLAB Catalog #3046010
+ and insert them into
+the nozzle slot and nozzle lock slot. Wait for 
+00:10:00
+12
+Clean all the parts in the box with 70% Ethanol and re-install them
+13
+Remove the Q-tips, clean and dry both the closed loop nozzle and the nozzle lock and
+re-install them
+14
+Perform an Extended Fluidics Startup
+15
+Grease the O-ring of the sample pressure chamber (by greasing the socket of the tube
+holder)
+16
+Purge the sheath filter 2x
+17
+Insert the desired nozzle and start the stream
+10m
+5/5

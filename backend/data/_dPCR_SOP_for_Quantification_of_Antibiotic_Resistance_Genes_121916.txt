@@ -1,0 +1,885 @@
+Apr 04, 2025
+dPCR SOP for Quantification of Antibiotic Resistance Genes
+DOI
+dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+Justine C. Condon , Lisa M. Durso
+USDA-ARS; USDA - ARS
+Justine C. Condon
+USDA-ARS
+1
+2
+1
+2
+DOI: dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+Protocol Citation: Justine C. Condon, Lisa M. Durso 2025. dPCR SOP for Quantification of Antibiotic Resistance Genes.
+protocols.io https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: February 18, 2025
+Last Modified: April 04, 2025
+Protocol Integer ID: 121916
+Keywords: dPCR, Quantification, Antibiotic resistance genes, Tetracycline, QIAcuity, Probe, Eva Green, digital PCR, digital
+polymerase chain reaction
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+1/19
+
+Disclaimer
+The use of trade, firm, or corporation names in this publication (or page) is for the information and
+convenience of the reader. Such use does not constitute an official endorsement or approval by the United
+States Department of Agriculture or the Agricultural Research Service of any product or service to the
+exclusion of others that may be suitable.
+Abstract
+To describe the procedures on how to set-up digital polymerase chain reaction (dPCR) for selected antibiotic
+resistance genes and determinants: 16S ribosomal RNA, sulfonamide (sul1), erythromycin (erm(B)), extended
+spectrum β-lactamase (blaCTX-M-1), integrase (intI1); and tetracycline tet(A), tet(O), and tet(X).
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+2/19
+
+Guidelines
+Scope
+Digital PCR is a specialized approach to nucleic acid detection and quantification that estimates absolute numbers
+of molecules through statistical methods. Digital PCR (dPCR) is the third-generation PCR technique. It sequesters
+probes and nucleic acids, and uses the same fundamental chemistry as qPCR, but unlike qPCR data, dPCR data
+are collected at the endpoint of the reaction mix. Before amplification, a bulk PCR reaction made up of nucleic
+acid, primers, probes, and master mix is digitized into many thousands of nanoliter-sized microreactions. As this
+digitization process distributes the PCR mix across so many microreactions, each microreaction will effectively
+either contain one, zero, or just a handful of the target nucleic acid molecules (ThermoFisher, 2015).
+The isolated microreactions are then amplified, and data are collected from each microreaction at the end of the
+thermal cycling process. Microreactions that do not contain the target will not show post-amplification
+fluorescence, while those that do contain the target will show post-amplification fluorescence (ThermoFisher,
+2015). While the concept of reading the fluorescent signals from amplified genes is the same compared to qPCR,
+dPCR is better at preserving the initial reaction mix conditions and clearly representing amplification progress,
+minimizing the occurrence of primer-dimers, and false amplification reading (Park, 2021). 
+The QIAcuity Digital PCR System is designed to deliver precise and multiplexed quantification results for mutation
+detection, copy number variation (CNV), gene expression studies, gene-editing analysis, and many more. This
+nanoplate-based system seamlessly integrates a standard dPCR workflow of partitioning, thermocycling and
+imaging into a walk-away automated platform with minimal hands-on time (Qiagen, 2024).
+Responsibility 
+This SOP applies to all staff members and students. These individuals must be knowledgeable about the
+requirements set forth within this document. The lab manager or designee shall ensure that all staff and students
+know the proper techniques. 
+Appendix B – gBlock Sequences
+Gene
+Dungan 2018 gBlock Sequences
+Size
+(bp)
+16S
+sul1
+intI1
+GTAAAACGACGGCCAGCGGTGAATACGTTCCCGGGCCTTGTACACACCGCCCGTCACACCATG
+GGAGTGGGTTGCAAAAGAAGTAGGTAGCTTAACCTTCGGGAGGGCGCTTACCACTTTGTGATTC
+ATGACTGGGGTGAAGTCGTAACAAGGTAACCGCCTTGATGTTACCCGAGAGCTTGGCACCCAG
+CCTGCGCGAGCAGCTGTCGCGTGCACGGGCATGGTGGCTGAAGGACCAGGCCGAGGGCCGCA
+GCGGCGTTGCGCTTCCCGACGCCCTTGAGCGGAAGTATCCGCGCGCCGGGCATTCCTGGCCG
+TGGTTCTGGGTTTTTGCGCAGCACACGCATTCGACCGATCCCGTTGGCCTTCCTGTAAAGGATC
+TGGGTCCAGCGAGCCTTGCGGCGGAACTTCACGCGATCGGCAACAGGAAACAGCTATGAC
+438
+A
+B
+C
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+3/19
+
+bla-
+ctx-m-1
+erm(B)
+GTAAAACGACGGCCAGATGTGCAGCACCAGTAAAGTGATGGCCGTGGCCGCGGTGCTGAAGAA
+AAGTGAAAGCGAACCGAATCTGTTAAATCAGCGAGTTGAGATCAAAAAATCTGACTTGGTTAAC
+TATAATCCGATTGCGGAAAAGCACGTCGATGGGACGATGTCACTGGCTGAGCTTAGCGCGGCC
+GCGCTACAGTACAGCGATAACGTGGCGATGAATAAGCTGATTTCTCACGTTGGCGGCCCGGCTA
+GCGTCACCGCGTTCGCCCGACAGCTGGGAGACGAAACGTTCCGTCTCGACCGTACCGAGCCG
+ACGTTAAACACCGCCATTCCGGGCGATCCGCGTGATGGATTCTACAAGCGTACCTTGGATATTC
+ACCGAACACTAGGGTTGCTCTTGCACACTCAAGTCTCGATTCAGCAATTGCTTAAGCTGCCAGC
+CAGGAAACAGCTATGAC
+461
+Gene
+Tetracycline gBlock Sequences
+Size
+(bp)
+tet(A)
+TTTTTGGCTACATCCTGCTTGCCTTCGCGACACGGGGATGGATGGCGTTCCCGATCATGGTC
+CTGCTTGCTTCGGGTGGCATCGGAATGCCGGCGCTGCAAGCAATGTTGTCCAGGCAGGTGG
+ATGAGGAACGTCAGGGGCAGCTGCAAGGCTCACTGGCGGCGCTCACCAGCCTGACCTCGAT
+CGTCGGACCCCTCCTCTTCACGGCGATCTATGCGGCTTCTATAACAACGTGGAACGGGTGG
+GCATGGATTGCAGGCGCTGCCCTCTACTTGCTCTGCCTGCTTTTTAATATCGGTATCAATGAG
+TTGTTGGACGCCATCACTTCTTTTATACTTCCTCCGGCATCGGTCTCAAACAGACTTTCATCT
+TATCTTTATAAGATAGAGCATGACCCCAAAGGACATAAAAGAAGTTTTCTAAAAATAATTGACG
+GAAGTCTGAGACTTCGAGACGTTGTAAGAATCAACGATTCGGAAAAATTCATCAAGATTAAAA
+ATCTAAAAACTATCAATCAGGGCAGAGAGATAAATGTTGATGAAGTGGGCGCCAATGATATCG
+CGATTGTAGAGGATATGGATGATTTTCGAATCGGAAATTATTTAGGTGCTGAACCTTGTTTGAT
+TCAAGGATTATCGCATCAGCATCCCGCTCTCAAATCCTCCGTCCGGCCAGACAGGCCCGAA
+GAGAGAAGCAAGGTGATATCCGCTCTGAATACATTGTGGATTGAAGACCCGTCTTTGTCCTTT
+TCCATAAACTCATATAGTGATGAATTGGAAATCTCGTTATATGGTTTAACCCAAAAGGAAATCA
+TACAGACATTGCTGGAAGAACGATTTTCCGTAAAGGTCCATTTTGATGAGATCAAGACTATATA
+CAAAGAACGACCTGTAAAAAAGGTCAATAAGATTATTCAGATCGAAGTGCCGCCCAACCCTT
+ATTGGGCCACAATAGGGCTGACTCTTGAACCCTTACCGTTAGGGACAGGGTTGCAAATCGAA
+AGTGACATCTCCTATGGTTATCTGAACCATTCTTTTCAAAATGCCGTTTTTGAAGGGATTCGT
+ATGTCTTGCCAATCCGGGTTACATGGATGGGAAGTGACTGATCTGAAAGTAACTTTTACTCAA
+GCCGAGTATTATAGCCCGGTAAGTACACCTGCTGATTTCAGACAGCTGACCCCTTATGTCTTC
+AGGCTGGCCTTGCAACAGTCAGGTGTGGACATTCTCGAACCGATTTTTT
+1239
+tet(O)
+TTTTTCAGCTTTCGGATTCTTACGGTCGGCGTCCGGTACTTCTGGCTTCTCTTGCAGGAGCC
+GCAGTCGATTACACGATTATGGCATCAGCGCCGGTCTTATGGGTGCTCTATATCGGCCGACTC
+GTGTCCGGCGTCACGGGCGCAACCGGAGCTGTAGCAGCCTCAACCATTGCCGATTCGACGG
+GGGAAGGTTCTCGCGCACGCTGGTTCGGCTACATGGGGGCCTGTTATGGGGCGGGCATGAT
+TGCCGGGCCAGCACTTGGTGGCATGCTCGGTGGTATCTCTGCTCATGCCCCGTTTATCGCCG
+CCGCCCTTCTCAACGGGTTCGCGTTCCTGCTTGCCTGCATTTTCCTCAAGGAGACTCATCAC
+AGCCATGGCGGGACCGGAAAGCCGGTTCGCATCAAACCATTCGTTCTGTTACGGCTGGATG
+ATGCATTGCGCGGGCTAGGTGCGCTTTTCGCAGTTTTCTTCATTATTCAACTGATCGGCCAA
+GTGCCTGCAGCCCTATGGGTCATATATGGCGAGGACCGTTTTCAGTGGAACACCGCGACCGT
+TGGTTTGTCGCTCGCGGCGTTTGGGGCAACACATGCGATCTTCCAAGCGTTTGTTACCGGC
+CCGCTTTCAAGCCGGCTTGGAGAGCGGCGCACGCTGCTGTTTGGCATGGCTGCGGATGGC
+ACTGGCTTCGTTCTTCTGGCTTTTGCCACGCAGGGATGGATGGTGTTCCCGATTCTGTTGCT
+GCTTGCCGCCGGGGGTGTTGGCATGCCGGCCTTGCAGGCAATGCTCTCAAACAATGTCAGC
+AGTAACAAGCAAGGGGCTTTGCAAGGAACGCTAACGAGCCTCACCAATCTTTTTAACTTAGG
+CATTCTGGCTCACGTTGACGCAGGAAAGACAACATTAACGGAGAGTTTATTGTATACCAGTGG
+TGCAATTGCAGAACCAGGGAGCGTAGATAAAGGCACAACAAGGACAGATACAATGAATTTGG
+AGCGTCAAAGGGGAATCACTATCCAGACAGCAGTGACATCTTTTCAGTGGGAGGATGTAAAA
+1423
+Probe-based gene's gBlock sequences.
+A
+B
+C
+A
+B
+C
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+4/19
+
+GTCAACATTATAGATACGCCAGGCCATATGGATTTTTTGGCGGAAGTATACCGTTCTTTATCCG
+TATTAGACGGAGCAGTATTATTAGTTTCTGCAAAGGATGGCATACAGGCACAGACCCGTATAC
+TGTTTCATGCACTACAGACAATGAAGATTCCGACAATTTTTTTCATCAATAAAATTGACCAAGA
+GGGGATTGATTTGCCAATGGTATATCAAGAAATGAAAGCAAAGCTTTCTTCGGAAATTATAGT
+GAAGCAAAAGGTTGGGCAGCATCCCCATATAAATGTAACGGACAATGACGATATGGAACAGT
+GGGATGCGGTAATTATGGGAAACGATGAACTATTAGAGAAATATATGTCAGGGTTTTT
+tet(X)
+TTTTTTTGGTTAGGGGCAAGTTTTGGGCTTGGTTTAATAGCGGGGCCTATTATTGGTGGTTTT
+GCAGGAGAGATTTCACCGCATAGTCCCTTTTTTATCGCTGCGTTGCTAAATATTGTCACTTTC
+CTTGTGGTTATGTTTTGGTTCCGTGAAACCAAAAATACACGTGATAATACAGATACCGAAGTA
+GGGGTTGAGACGCAATCGAATTCGGTATACATCACTTTATTTAAAACGATGCCCATTTTGTTG
+ATTATTTATTTTTCAGCGCAATTGATAGGCCAAATTCCCGCAACGGTGTGGGTGCTATTTACC
+GAAAATCGTTTTGGATGGAATAGCATGATGGTTGGCTTTTCATTAGCGGGTCTTGGTCTTTTA
+CACTCAGTATTCCAAGCCTTTGTGGCAGGAAGAATAGCCACTAAATGGGGCGAAAAAACGGC
+AGTACTGCTCGAATTTATTGCAGATAGTAGTGCATTTGCCTTTTTAGCGTTTATATCTGAAGGT
+TGGTTAGATTTCCCTGTTTTAATTTTATTGGCTGGTGGTGGGATCGCTTTACCTGCATTACAG
+GGAGTGATGTCTATCCAAACAAAGAGTCATGAGCAAGGTGCTTTACAGGGATTATTGGTGAGC
+CTTACCAATGCAACCGGTGTTATTGGCCCATTACTTTTTCAATAATTGGTGGTGGACCCGTTG
+GACTGACTATGGCAAAATTATTACAGCAAAACGGCATAGACGTTTCAGTTTACGAAAGAGACA
+ACGACCGAGAGGCAAGAATTTTTGGTGGAACCCTTGACCTACACAAAGGTTCAGGTCAGGAA
+GCAATGAAAAAAGCGGGATTGTTACAAACTTATTATGACTTAGCCTTACCAATGGGTGTAAAT
+ATTGCTGATAAAAAAGGCAATATTTTATCCACAAAAAATGTAAAGCCCGAAAATCGATTTGAC
+AATCCTGAAATAAACAGAAATGACTTAAGGGCTATCTTGTTGAATAGTTTAGAAAACGACACG
+GTTATTTGGGATAGAAAACTTGTTATGCTTGAACCTGGTAAGAAGAAGTGGACACTAACTTTT
+GAGAATAAACCGAGTGAAACAGCAGATTTGGTTATTCTTGCCAATGGCGGGATGTCCAAGGT
+AAGAAAAGTCAGCCTGCT
+1150
+Appendix C: Calculations
+Non-probe-based Eva Green gene's gBlock sequences.
+A
+B
+C
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+5/19
+
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+6/19
+
+Materials
+QIAcuity Probe PCR Kit (1 ml) Qiagen Catalog #250101
+QIAcuity EG PCR Kit (5 ml) Qiagen Catalog #250112
+QIAcuity Nanoplate (Qiagen, Germantown, MD)
+1. 
+QIAcuity Nanoplate 26k 8-well (10) Qiagen Catalog #250031
+2. 
+QIAcuity Nanoplate 26k 24-well (10) Qiagen Catalog #250001
+3. 
+QIAcuity Nanoplate 8.5k 96-well (10) Qiagen Catalog #250021
+Nanoplate Seals (11) Qiagen Catalog #250099
+Nanoplate Tray (2) Qiagen Catalog #250098
+Q-Solution Kit Qiagen Catalog #210220
+Digital PCR System (911000 QIAcuity One, 2plex instrument, Qiagen, Germantown, MD)
+PCR plate roller
+Optional: Restriction enzyme (EcoR1) (R010S, New England Biolabs, Ipswich, MA)
+Positive Control - gBlocks (IDT, Coralville, IA) (See Appendix B in 'Guidelines')
+Primers and Probes (100µM) (IDT, Coralville, IA) – (See Tables 2a & 2b in Step 16 for Sequences)
+Tris-EDTA Buffer, pH 8.0, 10mM Tris-HCl, 
+Tris-EDTA buffer solution Merck MilliporeSigma (Sigma-Aldrich) Catalog #93283-100ML
+Molecular Biology Grade Water HyClone Catalog #SH30538.01
+T320-2 & T320-3 Amplitube™ 8 tube strips with individually attached caps Simport Scientific
+Catalog #T320-2N
+2mL sterile microcentrifuge tube (02.681.299 Fisher Scientific, Pittsburg, PA)
+Aerosol barrier no-retention pipette tips for various volumes from 1-1000µL
+Pipettes for various volumes from 1-1000µL
+PCR Prep Cabinet (3620804 Labconco, Kansas City, MO)
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+7/19
+
+1
+Ensure that you wear gloves when working with a plate and do not apply force to it.
+2
+The QIAcuity reads fluorescence from the bottom of the plate, which is covered with a
+foil. For best results, keep the foil clean and avoid damage such as scratches.
+2.1
+For better plate handling, place the nanoplate into the nanoplate tray.
+3
+Keep the barcode on the side of the plate clean and intact.
+4
+For transport of the finished Nanoplate to the QIAcuity instrument, the plate should be
+held at the side edges or on the tray horizontally.
+4.1
+Transport smoothly without shaking or turning the plate, to ensure that the reaction mix
+is at the bottom of the input well.
+5
+DO NOT store the plate for more than 2 hours before the start of a run as this may lead to
+pre-priming of the reaction mix resulting in a reduced number of analyzable partitions.
+6
+The plate can be stored at 
+Room temperature  or at 
+4 °C  after the run for up to 1
+week. You can re-image a plate up to 7 times.
+7
+Prepare the dPCR prep area for setting up a dPCR reaction to eliminate contamination –
+UV the plate, PCR strip-tubes, PCR water, and microcentrifuge tubes for 
+00:15:00 .
+8
+Thaw the QIAcuity PCR master mix, template DNA, primers (& probes for probe-based
+reactions), Q-Solution, and RNase-free water. Vigorously mix the QIAcuity PCR master
+mix and the individual solutions. Centrifuge briefly to collect liquids at the bottom of the
+tubes.
+8.1
+QIAcuity Probe mastermix for probe-based reactions.
+15m
+Nanoplate Handling
+Procedure – Reaction Set-up
+25m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+8/19
+
+8.2
+QIAcuity EG mastermix for non-probe-based reactions.
+9
+Prepare a reaction mix for the number of reactions needed according to Tables 1a Probe
+& 1b EG.
+Compone
+nt
+Description
+Volume/RXN
+(µL) – 26K,
+24-well
+Volume/RXN
+(µL) – 8.5k,
+96-well
+Final
+Concentration
+TAQ
+QIAcuity Probe Kit Mix
+(Qiagen, Germantown,
+MD)
+10.0
+3.75
+1X
+PCR
+Water
+PCR Water (HyClone
+SH30538.01)
+11.2
+2.95
+N/A
+Primer 1
+Forward Primer
+(100µM)
+0.32
+0.12
+0.8µM
+Primer 2
+Reverse Primer
+(100µM)
+0.32
+0.12
+0.8µM
+Probe
+Probe (100µM)
+0.16
+0.06
+0.25µM
+Q-
+Solution
+Qiagen Q-Solution (5x)
+8.0
+3.0
+1x
+Sample
+DNA Template, or
+Control Standards
+10.0
+5.0
+2.5ng
+Compon
+ent
+Description
+Volume/RXN
+(µL) – 26K,
+24-well
+Volume/RXN
+(µL) – 8.5k,
+96-well
+Final
+Concentration
+TAQ
+QIAcuity EG Kit Mix
+(Qiagen, Germantown,
+13.3
+5.0
+1X
+Table 1a Probe-based. dPCR Master Mix recipe for: 26k, 24-well plates at 40µL total reaction
+volume; and 8.5k, 96-well plates at 15µL total reaction volume.
+A
+B
+C
+D
+E
+A
+B
+C
+D
+E
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+9/19
+
+MD)
+PCR
+Water
+PCR Water (HyClone
+SH30538.01)
+8.38
+1.88
+N/A
+Primer
+1
+Forward Primer
+(100µM)
+0.16
+0.06
+0.4µM
+Primer
+2
+Reverse Primer
+(100µM)
+0.16
+0.06
+0.4µM
+Q-
+Solution
+Q-Solution (5x)
+8.0
+3.0
+1x
+Sample
+DNA Template, or
+Control Standards
+10.0
+5.0
+2.5ng
+Table 1b EG. dPCR Master Mix recipe for: 26k, 24-well plates at 40µL total reaction volume;
+and 8.5k, 96-well plates at 15µL total reaction volume.
+9.1
+Due to the hot-start polymerase, it is not necessary to keep reagents 
+On ice  during
+reaction setup or while programming the QIAcuity instrument.
+9.2
+Mix the primers and probe by aspirating and expelling with the pipette tip, then add to
+the reaction mix.
+10
+Vortex the reaction mix.
+11
+Dispense appropriate volumes according to Tables 1a Probe & 1b EG of the reaction mix,
+into the wells of a standard PCR plate or 0.2µL PCR tubes. Then, add template DNA (See 
+Appendix A
+go to step #24  for making dilutions) into each well that contains the
+reaction mix according to Tables 1a Probe & 1b EG.
+11.1
+To mix, pipette up and down at least 4 times. Seal the standard PCR pre-plate or tubes,
+vortex, and centrifuge briefly.
+11.2
+DO NOT pipette the master mix and the sample separately into the nanoplate, as this
+will lead to insufficient mixing.
+A
+B
+C
+D
+E
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+10/19
+
+12
+Transfer the content of each well from the standard PCR plate/tubes to the wells of the
+nanoplate.
+12.1
+To ensure bubble-free pipetting:
+12.2
+DO NOT blow-out the liquid at the end of each dispense into the nanoplate.
+12.3
+Aspirate 
+40 µL  from each pre-plate well for dispensing into the bottom of each well
+of the 24-well nanoplate.
+12.4
+Aspirate 
+15 µL  from each pre-plate well for dispensing into the bottom of each well
+of the 96-well nanoplate.
+13
+Seal the nanoplate properly using the nanoplate seal. For a properly sealed plate, the
+plate seal covers the whole structure, and no bubbles or strong depressions are
+visible, as this can also lead to bad filling of the wells.
+13.1
+Remove the bottom white protective foil from the seal.
+13.2
+Center and align the plate seal so the foil doesn’t overlap on any side more than 1 mm.
+13.3
+Fix the seal with the nanoplate roller in the horizontal and vertical direction.
+13.4
+Remove the upper protective foil, beginning at the bottom left corner.
+13.5
+Hold the plate seal in place while lifting the upper transparent foil off.
+13.6
+Fix the seal again, this time with high force, rolling at least 3 times forwards and
+backwards horizontally then vertically.
+Roll over the plate seal covering the nanoplate frame.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+11/19
+
+13.7
+Ensure that overlapping parts of the plate seal are turned down and well attached to the
+plate frame and that the barcode is not covered. DO NOT apply pressure to the plate
+seal.
+14
+The plate can only be labeled in the lane between the plate edge and the printed letters,
+next to column 1, as well as the mirrored portion next to column 12.
+14.1
+DO NOT mark the bottom side of the plate, as it is used to read fluorescent signals.
+15
+If a restriction enzyme for DNA digestion has been included in the reaction, leave the
+plate for 
+00:10:00  at 
+Room temperature .
+16
+Proceed to [Section 'Procedure – Thermal Cycling Conditions & Software Set-up' 
+go to step #17 ] to program the cycler of the QIAcuity instrument according to 
+Tables 2a Probe & 2b EG.
+Gene
+Type
+Sequence 5' to
+3'
+TM
+(°C)
+TC
+Conditions
+based on
+Dungan 2018
+Ampli
+con
+Size
+(bp)
+Sequence
+Reference
+16S
+rRNA
+Forward
+CGGTGAATACGTT
+CYCGG
+56
+1 cycle at
+95°C for 3
+min, 35 cycles
+at 95°C
+for 15 sec,
+and 56°C for 1
+min.
+~123
+Suzuki et
+al. 2000
+Reverse
+GGWTACCTTGTTA
+CGACTT
+Probe
+CTTGTACACACCG
+CCCGTC
+sul1
+Forward
+CCGTTGGCCTTC
+CTGTAAAG
+60
+1 cycle at
+95°C for 3
+min, 40 cycles
+at 95°C
+for 15 sec,
+and 60°C for
+30 sec.
+67
+Heuer &
+Smalla
+2007
+Reverse
+TTGCCGATCGCGT
+GAAGT
+Probe
+CAGCGAGCCTTG
+CGGCGG
+erm(B)
+Forward
+GGATTCTACAAGC
+60
+1 cycle at
+95°C for 3
+min, 40 cycles
+92
+Bockelman
+n et al.
+10m
+A
+B
+C
+D
+E
+F
+G
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+12/19
+
+GTACCTTGGA
+at 95°C
+for 15 sec,
+and 60°C for
+30 sec.
+2009
+Reverse
+GCTGGCAGCTTAA
+GCAATTGCT
+Probe
+CACTAGGGTTGCT
+CTTGCACACTCAA
+GTC
+blaCTX-
+M-1
+Forward
+ATGTGCAGYACCA
+GTAARGTKATGGC
+60
+1 cycle at
+95°C for 3
+min, 40 cycles
+at 95°C
+for 15 sec,
+and 60°C for 1
+min.
+336
+Birkett et
+al. 2007
+Reverse
+ATCACKCGGRTCG
+CCNGGRAT
+Probe
+CCCGACAGCTGG
+GAGACGAAACGT
+intI1
+Forward
+GCCTTGATGTTAC
+CCGAGAG
+60
+1 cycle at
+95°C for 3
+min, 40 cycles
+at 95°C
+for 15 sec,
+and 60°C for
+30 sec.
+196
+Barraud et
+al. 2010
+Reverse
+GATCGGTCGAATG
+CGTGT
+Probe
+ATTCCTGGCCGTG
+GTTCTGGGTTTT
+Primer
+s
+Type
+Sequence
+TM
+(°C)
+TC
+Conditions
+Amplic
+on Size
+(bp)
+Sequen
+ce
+Referen
+ce
+tet(A) 
+Forwar
+d
+GCTACATCCTGCTTG
+CCTTC 
+58 (or 
+57 for
+Tet O)
+1 cycle at
+95°C for 2
+min; 35
+cycles at
+95°C for 30
+s, 58°C (or
+57°C) for 30
+sec, 72°C
+210
+Ng et
+al. 2001
+Table 2a Probe-based. Primer and probe sequences, annealing temperature, and thermal
+cycling conditions based on Dungan, 2018 and, confirmed to be identical with the listed
+citations. 16S changed to 35 cycles for dPCR. 
+A
+B
+C
+D
+E
+F
+G
+A
+B
+C
+D
+E
+F
+G
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+13/19
+
+for 1 min; 1
+cycle at
+72°C for 5
+min; 1 cycle
+at 40°C for 5
+min
+Revers
+e
+CATAGATCGCCGTGA
+AGAGG 
+tet(O) 
+Forwar
+d
+AACTTAGGCATTCTG
+GCTCAC 
+406
+Ng et
+al. 2001
+Revers
+e
+TCCCACTGTTCCATAT
+CGTCA 
+tet(X) 
+Forwar
+d
+CAATAATTGGTGGTG
+GACCC 
+468
+Ng et
+al. 2001
+Revers
+e
+TTCTTACCTTGGACAT
+CCCG 
+Table 2b EG - Tetracycline. Primer sequences, annealing temperature, and thermal cycling
+conditions for the Tet PCR assay. 
+17
+Open and login to the QIAcuity Software Suite.
+18
+Click Plates in the main toolbar to enter the plates environment.
+18.1
+Click New Plate.
+19
+Specify General Data → Plate Name, Plate Type, Barcode. (Optional to enter 
+Description and Labels).
+19.1
+When scanning or entering the barcode this will automatically fill in Plate Type. Each
+barcode is unique and can only be used once.
+20
+Specify dPCR Parameters → Priming, Cycling, Imaging.
+A
+B
+C
+D
+E
+F
+G
+Procedure – Thermal Cycling Conditions & Software Set-up
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+14/19
+
+20.1
+Priming: priming parameters are plate type specific. Select the applicable Priming
+Profile after entering the Plate Type in General Data.
+20.2
+Cycling: Define the temperature profile of your experiment (See Table 2).
+In the Temperature field, specify the temperature of the step, then specify the
+duration of the temperature in the Duration field.
+Click Add Temperature Step.
+Repeat these steps for all temperature steps, using the up and down arrows to
+arrange the order of the steps.
+Check the box corresponding to the temperature steps that you want to use for
+repeated cycling and click Group.
+In the first column of the grouped temperature steps, add the number of cycles.
+20.3
+Imaging: enables you to set the respective exposure duration and gain value for each
+channel.
+20.4
+Select the channel(s) relevant for your experiment.
+For FAM probe-based & EG genes select Green.
+20.5
+Set the ‘Exposure Duration’ and ‘Gain,’ then click Save Changes or Done.
+1. For Probe-based: Typically, Exposure should be at 500 ms and Gain at 6. You can
+add additional ‘Imaging’ segments and change the parameters (a Gain of 10 is another
+gain to try out). If you need to troubleshoot, you can play around with the exposure
+and gain.
+2. For EG: Typically, Exposure should be at 300 ms and Gain at 3. You can add
+additional ‘Imaging’ segments and change the parameters. If you need to
+troubleshoot, you can play around with the exposure and gain.
+21
+Specify the Reaction Mixes.
+21.1
+Select New Reaction Mix. Type in ‘Reaction mix name’ and ‘Target Name’ which can just
+be the gene you are using.
+1. Select the ‘Dye.’ For Table 2a genes select FAM. 
+For Table 2b genes select EvaGreen.
+2. Select the ‘Channel’. For Table 2a,b genes select Green.
+22
+Specify the Plate Layout.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+15/19
+
+22.1
+Highlight all the wells and select the Reaction Mix created in Step 21.
+22.2
+Individually select each well and create a ‘New Sample’ – input the sample ID and other
+identifiable information (dilution, rep, etc.).
+1. Input Template Volume (typically 5µL or 10µL), Total Reaction Volume (15µL or 40µL),
+and Concentration Factor (aka the sample dilution).
+2. gBlock standards can be input as a sample.
+3. Non-Template Control (NTC) input as a Non-Template Control – create new, and type 
+NTC.
+23
+Load the plate into the machine and start a run.
+23.1
+Turn on and log in to the machine.
+The plate’s layout and parameters must be completed in the Software Suite before
+starting a run.
+23.2
+To eject a tray, press the physical button on the instrument or tap Eject Tray on the touch
+screen.
+23.3
+Place a plate in the ejected slot with the barcode facing toward the rear of the
+instrument. Ensure that the top seal of the plate is intact and not overlapping on the side
+more than 1 mm in any direction. Close the tray-slot.
+23.4
+The instrument will scan the barcode, and once detected in the closed slot, the
+touchscreen will indicate that Plate is detected.
+If the barcode matches to an existing experiment in the Software Suite, the loaded
+plate plan displays the defined run setup and can be started.
+23.5
+You can double check plate information and view details for the plate by clicking Show
+details in the plate’s pane.
+23.6
+Click the Run icon on the plate’s pane to start the run.
+23.7
+The Running Status of the run can be tracked throughout the whole run cycle.
+Status bar with time running is displayed.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+16/19
+
+Font color of completed steps are black.
+When a step is in progress, its font color is blue.
+Pending steps are shown in light gray.
+A run can be stopped at any time by pressing the Stop Run icon.
+Note
+Aborting a plate during the priming/rolling steps renders it unusable and the plate cannot
+be used and run again. A plate that has been aborted during the Thermocycling or Imaging
+step can be used again. To rerun the plate, configure a run with only the remaining steps.
+23.8
+When the run is finished, the status changes to Done and the Eject button becomes
+available.
+24
+Prior to running a full plate of samples, test a subset at varying dilutions to see which will
+give the best result (Appendix C – The dMIQE Group in 'Guidelines').
+25
+From the straight DNA create a 10-fold, 100-fold, and 1000-fold dilution using the
+increments of 
+1 µL  DNA and 
+9 µL  PCR water at the volume desired. 
+26
+Run a plate of the test dilutions. Can also include the straight DNA if desired. 
+27
+After seeing the results, determine the best dilution for the sample set, or alter based on
+nanodrop information. Then make that dilution for your sample set and continue with
+section - 'Procedure – Reaction Set-up' (Step 7).
+Redo and go out further dilutions if necessary. 
+Appendix A – DNA Dilutions
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+17/19
+
+Protocol references
+1. Barraud, O., M.C. Baclet, F. Denis, and M.C. Ploy.  2010.  Quantitative multiplex real-time PCR for detecting class
+1, 2, and 3 integrons.  J. Antimicrob. Chemother 65:1642-1645.
+2. Birkett, C.I., Ludlam, H.A., Woodford, N., Brown, D.F., Brown, N.M., Roberts, M.T., Milner, N., Curran, M.D. 2007.
+Real-time TaqMan PCR for rapid detection and typing of genes encoding CTX-M extended-spectrum β-
+lactamases. J. Med. Microbiol. 56, 52–55.  
+3. Bockelmann, U., Dorries, H.H., Ayuso-Gabella, M.N., Salgot de Marcay, M., Tandoi, V., Levantesi, C., et al.,
+2009. Quantitative PCR monitoring of antibiotic resistance genes and bacterial pathogens in three European
+artificial groundwater recharge systems. Appl. Environ. Microbiol. 75, 154–163.         
+4. Bustin, S.A., V. Benes, J.A. Garson, J. Hellemans, J. Huggett, M. Kubista, R. Mueller, T. Nolan, M.W. Pfaffl, G.L.
+Shipley, . Vandesompele, and C. T. Wittwer.  2009. The MIQE Guidelines:  Minimum Information for Publication of
+Quantitative Real-Time PCR Experiments.  Clinical Chemistry.   55(4):611-622.  
+5. Dungan, R.S., C.W. McKinney, A.B. Leytem. 2018. Tracking antibiotic resistance genes in soil irrigated with dairy
+wastewater. Science of the Total Environment 635”1477-1483.   
+6. Heuer, H., Smalla, K., 2007. Manure and sulfadiazine synergistically increased bacterial antibiotic resistance in
+soil over at least two months. Environ. Microbiol. 9, 657–666.  
+7. Ng, L.-K., et al. “Multiplex PCR for the Detection of Tetracycline Resistant Genes.” Molecular and Cellular
+Probes, vol. 15, no. 4, 15 Jan. 2001, pp. 209–215, https://doi.org/10.1006/mcpr.2001.0363.
+8. Park, S.; Rana, A.; Sung, W.; Munir, M. Competitiveness of Quantitative Polymerase Chain Reaction (qPCR) and
+Droplet Digital Polymerase Chain Reaction (ddPCR) Technologies, with a Particular Focus on Detection of
+Antibiotic Resistance Genes (ARGs). Appl. Microbiol. 2021, 1, 426-444.  
+9. Suzuki, M.T., Taylor, L.T., DeLong, E.F., 2000. Quantitative analysis of small-subunit rRNA genes in mixed
+microbial populations via 5′-nuclease assays. Appl. Environ. Microbiol. 66, 4605–4614.  
+10. Qiagen. QIAcuity Digital PCR System. 2024. QIAcuity Digital PCR System | QIAGEN
+11. The dMIQE Group , Jim F Huggett, The Digital MIQE Guidelines Update: Minimum Information for Publication of
+Quantitative Digital PCR Experiments for 2020, Clinical Chemistry, Volume 66, Issue 8, August 2020, Pages 1012–
+1029, https://doi.org/10.1093/clinchem/hvaa125
+12. ThermoFisher Scientific, Behind the Bench Staff. What is Digital PCR? ThermoFisher Blog. 3.16.2015. What Is
+Digital PCR? – Learn About the Advantages of dPCR (thermofisher.com)
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+18/19
+
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
+April 4, 2025
+19/19

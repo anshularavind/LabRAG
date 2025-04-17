@@ -1,0 +1,103 @@
+Mar 07, 2017 Version 1
+Calcium phosphate transfection of Oxyrrhis marina with an Alexa488-
+labelled DNA fragment V.1
+DOI
+dx.doi.org/10.17504/protocols.io.ha4b2gw
+Protist Research to Opti…
+Slamovits Lab
+Pia Elustondo
+DOI: dx.doi.org/10.17504/protocols.io.ha4b2gw
+Protocol Citation: Pia Elustondo: Calcium phosphate transfection of Oxyrrhis marina with an Alexa488-labelled DNA fragment.
+protocols.io https://dx.doi.org/10.17504/protocols.io.ha4b2gw
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+Created: March 06, 2017
+Last Modified: November 09, 2017
+Protocol Integer ID: 5180
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ha4b2gw
+March 7, 2017
+1/4
+
+1
+-O marina cultures in F/2 medium supplemented with heat inactivated bacteria. The
+cultures were maintained with the heat inactivated bacteria supplanted every week with
+an extra addition an hour prior to the transfection.  (It has not been tested yet if this
+addition one hour before the transfection is critical or not).
+-ULYISIS Nucleic acid labeling kit (Molecular Probes, Cat # U21650). This kit is used to
+prepare the DNA and label it with a fluorophore. In our case, we used the ULYSIS Alexa
+488 labeling kit.
+-Transfection reagents
+2.5 M CaCl2
+2XHEBS (274 mM NaCl, 10 mM KCl, 1.4 mM Na2HPO4, 15 mM D-glucose, 42 mM HEPES
+(free acid), pH 7.10
+HBS0/2: 144 mM NaCl, 3 mM KCl, 2 mM MgCl2, 10 mM HEPES pH 6.7 (alternatively other
+protocols use PBS pH 7.4). It was also possible to see the transfection with no washes.
+2
+Use only fragments that are 100 bp to 1000 bp
+Long DNA can be degraged with DNAse into fragments 100 to 1000 bp. The ULYSIS kit
+includes DNAse and a protocol to produce fragments in that range. Alternative PCR
+products can be used. The labelling kit suggests not to use longer fragments to avoid
+precipitation of the labelled fragments.
+For labeling 1 ug of DNA, cleaned PCR products or DNA fragments should be precipitated
+in 3M sodium acetate (pH5.2) and two volumes of absolute ethanol, freeze at -70 °C for
+30 min and then for 15 min at 12,000 g. Wash the pellet with 70 % ethanol and allow it to
+air dry. Resuspend the pellet in 20 ul of the labeling buffer from the ULYSIS kit.
+Alternatively I have eluted the PCR products from the mini column in 30 ul of the labelling
+buffer form the ULYISIS kit.
+3
+The following two steps were performed exactly as indicated in the instruction manual of
+the kit. It was up scaled to label 5 ug of DNA
+Denature the DNA at 95 °C for 5 min and then snap cool on ice. Centrifuge the tube
+briefly to redeposit the sample to the bottom of the tube
+Add 1 ul of Alexa fluo Ulysis reagent per ug of DNA
+Materials used:
+1. Prepare DNA for labelling.
+2. Label the DNA
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ha4b2gw
+March 7, 2017
+2/4
+
+Incubate at 80 °C for 15 min. Stop the reaction by placing the tube on ice. Centrifuge
+briefly
+4
+Purify the product from the excess of free ULS labelling reagent using a gel filtration-
+based spin column. The instructions recommend Bio-Rad Micro Bio-Spin ®P-30 or
+Princeton Separations Centri-Sep. I used Zeba spin desalting columns (Zeba, Thermo
+Scientific, cat # 89882)
+5
+-Prepare DNA/CaCl2 mix for transfection of 1 ml of dense culture:
+DNA                             1-8 ug
+2.5 M CaCl2                          5 ul
+Nuclease free H2O      to 50 ul final volume
+If there is a desire to increase the amounts of DNA to 3-24  ug , the CaCl2 should be
+increased to 15 ul and the final volume to 150 ml.
+-Mix the DNA/CaCl2 with equal volumes of HeBS. IMPORTANT: add 1/10th of the
+volumes of the DNA/CaCl2 mix at a time mixing well by vortexing 3 s after each addition.
+This gradual mixing avoids local over concentrations of CaCl2, which creates an
+unevenly sized precipitate. Supposedly, only very fine precipitate is efficiently taken up
+by the cells.
+-Incubate 20 min at RT
+-Add 800-1000 ul of O marina culture
+-Incubate at RT. Image at different time points. I saw the fluorescence after about 4-5
+and collected images 24 h later.
+-The efficiency seems to be 30-40 % but a lot of them show fluorescence in the nucleus,
+suggesting that this could be potentially an appropriate method to generate stable
+transfected O marina.
+-There is a wash step in which the cells are supposed to be rinsed with HBS0/2 three
+times and then resuspended in their medium but I noticed a lot of cell damage with
+centrifugation so I skipped the washes and did a dilution in F/2 medium in half the first
+day.
+3. Purify the labelled DNA fr the free ULS labelling reagent
+3.Transfection
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ha4b2gw
+March 7, 2017
+3/4
+
+This protocol was adapted from  Matz J, Gilyan A, Kolar A, McCarvill T, Krueger SR.
+Rapid structural alterations of the active zone lead to sustained changes in
+neurotransmitter release. Proceedings of the National Academy of Sciences of the
+United States of America. 2010;107(19):8836-8841. doi:10.1073/pnas.0906087107.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.ha4b2gw
+March 7, 2017
+4/4

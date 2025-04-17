@@ -1,0 +1,83 @@
+Feb 11, 2025
+Aβ ELISA
+In 2 collections
+DOI
+dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+Ching-Chieh Chou , Judith Frydman
+Stanford University
+Ching-Chieh Chou
+Stanford University
+1
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+Protocol Citation: Ching-Chieh Chou, Judith Frydman 2025. Aβ ELISA. protocols.io
+https://dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: February 11, 2025
+Last Modified: February 11, 2025
+Protocol Integer ID: 119915
+Keywords: ASAPCRN
+Funders Acknowledgements:
+Aligning Science Across Parkinson's
+Grant ID: ASAP-000282
+Aligning Science Across Parkinson's
+Grant ID: ASAP-024268
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+February 10, 2025
+1/4
+
+Abstract
+Measure Aβ42 levels in human neurons.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+February 10, 2025
+2/4
+
+1
+Human Aβ42 ELISA Kit (Thermo Fisher Scientific).
+2
+Human tNeurons are first trypsinized, washed with ice-cold PBS
+and pelleted by centrifugation for 5 min at 1,000 X G. 
+3
+Cells are lysed with RIPA buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 1% NP-40, 0.5%
+sodium
+deoxycholate) supplemented with protease inhibitors (Roche). 
+4
+Collect the supernatants and protein concentrations are determined by BCA assay
+(Thermo Fisher Scientific). 
+5
+Human Aβ42 ELISA Kit is used to detect and quantify the Aβ42 levels in total tNeuron
+lysates. 
+6
+Prepare standards of 1000, 500, 250, 125, 62.5, 31.25, 15.63, and 0 pg/mL human Aβ42 in
+Standard Diluent Buffer.
+7
+50 µL of standards, control medium, cell lysates are added to each well of a 96-well
+plate.
+8
+Add 50 µL anti-human Aβ42 antibody per well and incubate 3 hr in the dark at room
+temperature with shaking.
+9
+Remove the solution and rinse wells 4 times with 1X Wash Buffer.
+10
+Add 100 µL Anti-Rabbit IgG HRP into each well and incubate in the dark for 30 min at
+room temperature.
+11
+Remove the solution and rinse wells 4 times with 1X Wash Buffer.
+12
+Add 100 µL Stabilized Chromogen to each well and incubate in the dark for 30 min at
+room temperature.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+February 10, 2025
+3/4
+
+13
+Add 100 µL Stop Solution to each well. The plate is analyzed within 2 hr according to
+manufacturer’s protocol and Aβ42 values are normalized to total protein concentration of
+lysates.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9e6plk5/v1
+February 10, 2025
+4/4

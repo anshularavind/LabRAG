@@ -1,0 +1,410 @@
+Apr 15, 2025
+Whole genome amplification of human parechovirus type 3 (PEV-A3)
+utilizing tiling-PCR
+DOI
+dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+Nora Deezsi-Magyar
+National Center for Public Health and Pharmacy
+Nora Deezsi-Magyar
+National Center for Public Health and Pharmacy
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+Protocol Citation: Nora Deezsi-Magyar 2025. Whole genome amplification of human parechovirus type 3 (PEV-A3) utilizing
+tiling-PCR. protocols.io https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: April 15, 2025
+Last Modified: April 15, 2025
+Protocol Integer ID: 126707
+Abstract
+The procol allows whole genome amplification of PEV-A3, prior to next generation library preparation and
+sequencing. Suitable for Nanopore and Illumina sequencing as well.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+1/7
+
+1
+Reagents
+TURBO DNase
+ (2 U/μL), Invitrogen
+Nuclease-free destillated water
+1.1
+Prepare the following master mix
+TURBO
+DNase (2 U)
+1.0 uL
+TURBO
+DNase puffer
+4.0 uL
+Destillated
+water
+6.0 uL
+RNA
+40.0 uL
+1.2
+Incubation in thermocycler
+37 °C
+00:30:00
+2
+Post-DNAse I treatment clean-up
+Reagents
+AMPure XP Beads, Beckman Coulter 
+70% EtOH (prepared freshly) 
+Nuclease-free destillated water
+2.1
+Add 1.8 μl AMPure XP per 1.0 μl of sample.
+2.2
+Bind DNA fragments to paramagnetic beads.
+2.3
+Separation of beads + DNA fragments from contaminants.
+2.4
+Wash beads + DNA fragments twice with 70% EtOH to remove contaminants.
+2.5
+Elute purified DNA fragments from beads.
+A
+B
+30m
+DNAse I treatment (to remove contaminating human-derived gDNA)
+40m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+2/7
+
+2.6
+Transfer to new tubes.
+3
+Reagents
+SuperScript
+ VILO
+ cDNA Synthesis Kit, Invitrogen
+Nuclease-free destillated water
+3.1
+Prepare the following master mix
+5X VILO™
+Reaction Mix
+4.0 uL
+10X
+SuperScript™
+Enzyme Mix
+2.0 uL
+Destillated
+water
+4.0 uL
+RNA
+8.0 uL
+3.2
+Incubation in thermocycler
+25 °C
+00:10:00
+3.3
+Incubation in thermocycler
+42 °C
+01:00:00
+3.4
+Incubation in thermocycler
+85 °C
+00:05:00
+4
+Reagents
+PhusionTM High-Fidelity DNA Polymerase, New England Biolabs
+Nuclease-free destillated water
+dNTP mix
+A
+B
+10m
+5m
+Reverse transcription
+1h 20m
+Polymerase chain reaction (tiling-PCR)
+2h 30m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+3/7
+
+4.1
+Prepare the following master mixes
+Mix_1
+5x
+Phusion‱
+High-Fidelity
+PCR Master
+Mix with GC
+Buffer
+4.0 uL
+dNTP mix (10
+mM)
+0.4 uL
+Phusion‱
+High-Fidelity
+DNA
+Polymerase
+0.2 uL
+Primer
+pool_2
+3.0 uL
+Destillated
+water
+7.4 uL
+cDNA
+template
+5.0 uL
+Mix_2
+5x
+Phusion‱
+High-Fidelity
+PCR Master
+Mix with GC
+Buffer
+4.0 uL
+dNTP mix (10
+mM)
+0.4 uL
+Phusion‱
+High-Fidelity
+DNA
+Polymerase
+0.2 uL
+Primer
+pool_2
+3.0 uL
+Destillated
+water
+7.4 uL
+cDNA
+template
+5.0 uL
+The mix includes pool_1 primers (see section 4.2)
+The mix includes pool_2 primers (see section 4.2)
+A
+B
+A
+B
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+4/7
+
+4.2
+Tiling-PCR primers
+Primer
+Pool
+Sequence (5' - 3')
+Size
+Position
+(bp)
+hPeV-
+3_1_LEFT
+1
+ATACCCCGATTTGCTGAGCT
+TC
+22
+41 – 987
+hPeV-
+3_1_RIGHT 1
+GCCATTGAATGAAAGTTATC
+CACATTTC
+28
+hPeV-
+3_2_LEFT
+2
+GATGTAGTGCAAGCTACGAC
+CA
+22
+899 –
+1895
+hPeV-
+3_2_RIGH
+T
+2
+CTACTGTGGCTGCCCAATC
+AAA
+22
+hPeV-
+3_3_LEFT
+1
+TGATCCTAGAACTGCAGGG
+AGT
+22
+1750 –
+2745
+hPeV-
+3_3_RIGH
+T
+1
+TCTTCAGTGTCATATGTATG
+AGCCAC
+26
+hPeV-
+3_4_LEFT
+2
+AAGAGGGTCATGGCATGTT
+GTC
+22
+2625 –
+3631
+hPeV-
+3_4_RIGH
+T
+2
+TGTAGACAAACAAGCAGTG
+GTTAGA
+25
+hPeV-
+3_5_LEFT
+1
+TCCTCAGCAGCCACAGAAA
+TTC
+22
+3500 –
+4487
+hPeV-
+3_5_RIGH
+T
+1
+TCTCTTCAAGATGTGCCATT
+GGG
+23
+hPeV-
+3_6_LEFT
+2
+GCCAGTGAGTTCATGGATG
+GTT
+22
+4340 –
+5339
+hPeV-
+3_6_RIGH
+T
+2
+GCTGGTATCCTGCACAATGT
+GT
+22
+hPeV-
+3_7_LEFT
+1
+GCCAAACCAAAGAGTGCTT
+TCC
+22
+5192 –
+6188
+hPeV-
+3_7_RIGH
+T
+1
+CGGACTTAACAAAGCTGTA
+CCCT
+23
+hPeV-
+3_8_LEFT
+2
+GGCAAGGTGTTAAAGCATG
+TGTC
+23
+6039 –
+7057
+hPeV-
+3_8_RIGH
+T
+2
+GCTGCTTGAATGTGCTGAA
+GTTT
+23
+hPeV-
+3_9_LEFT
+1
+ACCACCATCTTTAACACTTG
+TCTCA
+25
+6296 –
+7323
+A
+B
+C
+D
+E
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+5/7
+
+hPeV-
+3_9_RIGH
+T
+1
+TGGTATGTCCAATATTCCAA
+ATTAGTGTTC
+30
+4.3
+Tiling-PCR thermocycling
+1 
+98 °C
+00:00:30
+2 
+98 °C
+00:00:10
+3 
+54 °C
+00:00:20
+4 
+72 °C
+00:00:50
+5 Repeat steps 2-3-4 for 40 times.
+6 
+72 °C
+00:05:00
+7 
+4 °C  hold
+4.4
+Post PCR-clean-up
+Reagents
+Ampure XP Beads, Beckman Coulter
+70% EtOH (fershly prepared)
+Nuclease-free destillated water
+4.5
+Add 0.8 μl AMPure XP per 1.0 μl of sample.
+4.6
+Bind DNA fragments to paramagnetic beads.
+4.7
+Separation of beads + DNA fragments from contaminants.
+4.8
+Wash beads + DNA fragments twice with 70% EtOH to remove contaminants.
+4.9
+Elute purified DNA fragments from beads.
+4.10
+Transfer to new tubes.
+A
+B
+C
+D
+E
+6m 50s
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+6/7
+
+5
+Reagents
+Qubit 1X dsDNA HS Assay Kit
+5.1
+Add 190 uL of working solution to all wells of two Qubit strips. Label the top of the tubes
+S1 and S2. Then add 10 uL of the respective HS Standard (1 or 2) to each tube of the two
+strips.
+5.2
+For each of your sample tubes, add 198 uL of working solution to labeled tubes. 
+Then add 2 uL of your samples to each tube. 
+5.3
+Vortex all strips and spin down if necessary. Incubate for 3-5 minutes at room
+temperature. 
+5.4
+On the Qubit, select 1x dsDNA -> dsDNA High Sensitivity -> Read standards
+5.5
+Insert strip standard 1 and then select Read standard. Repeat for standard 2. 
+5.6
+Select Run samples and read the respective wells of the strips. Use the 2 uL sample
+volume. When you are done.
+Tiling-amplicon quantification using Qubit Flex fluorometer
+10m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.q26g758q3lwz/v1
+April 15, 2025
+7/7

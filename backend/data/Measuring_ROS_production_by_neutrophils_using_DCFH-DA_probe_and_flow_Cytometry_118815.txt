@@ -1,0 +1,189 @@
+Jan 21, 2025
+Measuring ROS production by neutrophils using DCFH-DA probe and flow
+Cytometry
+DOI
+dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+Valeria Duarte de Almeida
+Faculty of Health Sciences
+Valeria Duarte de Almeida
+Faculty of Health Sciences, Universidade do Estado do Rio Gr...
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+Protocol Citation: Valeria Duarte de Almeida 2025. Measuring ROS production by neutrophils using DCFH-DA probe and flow
+Cytometry. protocols.io https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working.
+Created: January 21, 2025
+Last Modified: January 21, 2025
+Protocol Integer ID: 118815
+Keywords: ROS, Neutrophils
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+1/6
+
+Disclaimer
+DISCLAIMER – FOR INFORMATIONAL PURPOSES ONLY; USE AT YOUR OWN RISK
+The protocol content here is for informational purposes only and does not constitute legal, medical, clinical,
+or safety advice, or otherwise; content added to protocols.io is not peer reviewed and may not have
+undergone a formal approval of any kind. Information presented in this protocol should not substitute for
+independent professional judgment, advice, diagnosis, or treatment. Any action you take or refrain from
+taking using or relying upon the information presented here is strictly at your own risk. You agree that
+neither the Company nor any of the authors, contributors, administrators, or anyone else associated with 
+protocols.io, can be held responsible for your use of the information contained in or linked to this protocol
+or any of our Sites/Apps and Services.
+Abstract
+Neutrophils are isolated, stained with the DCFH-DA probe, and incubated with or without stimuli (e.g., PMA or
+fMLP) to induce ROS production. After incubation, fluorescence is measured by flow cytometry to assess
+intracellular ROS levels. Stimulated neutrophils should exhibit increased fluorescence intensity compared to
+unstimulated controls, indicating higher ROS production. The presence of inhibitors like DPI should result in a
+significant reduction in fluorescence, confirming the specificity of ROS detection.
+Guidelines
+To ensure the accuracy, reproducibility, and safety of the experiment, the following guidelines should be followed:
+Use anticoagulants like EDTA or heparin to prevent clotting.
+Process blood samples promptly (within 2–4 hours) to ensure neutrophil viability.
+Ensure >95% cell viability using trypan blue or propidium iodide staining before proceeding with the assay.
+Handle cells gently to avoid activation or damage.
+Always include appropriate controls (negative control, positive control with PMA, and inhibitor control with DPI)
+to validate the experiment.
+Use biological replicates (at least 3) to ensure statistical significance.
+Maintain consistent cell concentrations across samples (e.g., 1 × 10⁶ cells/mL).
+Use freshly prepared reagents to prevent degradation and variability.
+Prepare DCFH-DA solutions under low light conditions to prevent premature oxidation.
+Aliquot reagents to avoid repeated freeze-thaw cycles.
+Set appropriate forward and side scatter parameters to properly gate neutrophil populations.
+Conduct experiments under identical conditions, such as temperature, incubation times, and reagent batches.
+Use standardized protocols for sample preparation and data analysis.
+Work in a sterile environment to prevent bacterial contamination, which may alter results.
+Regularly clean flow cytometry fluidics to avoid cross-contamination.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+2/6
+
+Materials
+Neutrophils suspension (isolated from human peripheral blood or animal models)
+DCFH-DA (2',7'-dichlorodihydrofluorescein diacetate) probe
+Phosphate-buffered saline (PBS), pH 7.4
+RPMI 1640 medium (with 10% fetal bovine serum, optional)
+Stimuli for positive control: Phorbol 12-myristate 13-acetate (PMA)
+Inhibitors (if needed): Diphenyleneiodonium (DPI, NADPH oxidase inhibitor)
+Flow cytometer with excitation/emission filters for FITC (488/530 nm)
+FACS tubes or 96-well plates
+Refrigerated centrifuge and 37°C water bath
+Safety warnings
+Biological Hazards: Handle blood-derived neutrophils with care to avoid potential infections. Disinfect
+work surfaces before and after the experiment.
+Chemical Hazards: PMA and DPI are potentially hazardous; handle them inside a fume hood and
+dispose of them properly.
+Laser Safety: Avoid direct exposure to the laser beams of the flow cytometer to prevent eye damage.
+Ethics statement
+Human Samples:
+Obtain informed consent from donors in compliance with institutional and national ethical regulations.
+Ensure anonymity and confidentiality of donor data.
+Dispose of biohazardous waste following institutional protocols.
+Animal Studies:
+Conduct experiments according to ethical guidelines outlined by relevant regulatory bodies (e.g., ARRIVE,
+IACUC).
+Use the minimum number of animals required to achieve statistical power.
+If approval was obtained, please include the name of the IACUC or equivalent ethics committee and any relevant
+permit numbers.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+3/6
+
+Before start
+Before starting the experiment, ensure the following conditions are met:
+1. Personal Protective Equipment (PPE): Wear gloves, lab coat, and safety goggles when handling blood
+samples and reagents.
+2. Biosafety: Follow biosafety level 2 (BSL-2) guidelines if working with human blood or primary cells.
+3. Instrument Calibration: Verify that the flow cytometer is properly calibrated and compensated to avoid false-
+positive signals.
+4. Reagent Preparation: Prepare fresh DCFH-DA working solutions to prevent auto-oxidation and ensure
+accurate results.
+5. Sample Collection Ethics: Ensure all human samples are collected with informed consent and under the
+approval of an Institutional Ethics Committee.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+4/6
+
+1
+Isolate neutrophils from whole blood using density gradient centrifugation (e.g., Ficoll-
+Paque).
+2
+Wash cells twice with PBS to remove any residual isolation medium.
+3
+Count the cells and adjust the concentration to approximately 1 × 10⁶ cells/mL in RPMI
+1640 or PBS.
+4
+Prepare the DCFH-DA working solution at a final concentration of 5–10 µM in PBS.
+5
+Add the DCFH-DA to the neutrophil suspension and incubate for 20–30 minutes at 37°C
+in the dark, allowing the probe to penetrate the cells and be hydrolyzed to non-
+fluorescent DCFH.
+6
+After incubation, wash cells with PBS to remove excess probe.
+7
+Divide cells into different experimental groups, such as:
+Unstimulated control (no treatment)
+Positive control (treated with 100 nM PMA)
+Experimental groups (treated with stimuli of interest, e.g., fMLP)
+Inhibitor groups (pretreated with DPI before stimulation)
+8
+Incubate cells with the desired stimulus for 30–60 minutes at 37°C.
+9
+After incubation, immediately place cells on ice to stop the reaction
+3h
+30m
+5m
+30m
+10m
+1h
+Neutrophil Isolation and Preparation
+3h 30m
+Staining with DCFH-DA
+45m
+ROS Stimulation and Measurement
+1h 20m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+5/6
+
+10
+Analyze fluorescence using a flow cytometer, with excitation at 488 nm and emission at 
+530 nm (FITC channel).
+11
+Set up the flow cytometer using unstained cells (gate) to establish background
+fluorescence.
+12
+Acquire at least 10,000 events per sample.
+13
+Analyze data in terms of:
+Mean fluorescence intensity (MFI), which reflects the level of ROS production.
+Percentage of positive cells producing ROS.
+14
+Compare results across conditions to determine changes in ROS levels.
+15
+Increased fluorescence indicates higher ROS production.
+Compare MFI values between treated and control samples.
+Use statistical tests (e.g., ANOVA or t-test) to assess significance.
+Protocol references
+Ito, Y., Lipschitz, D.A. (2002). Assay of Intracellular Hydrogen Peroxide Generation in Activated Cytometry
+Individual Neutrophils by Flow. In: Armstrong, D. (eds) Oxidants and Antioxidants. Methods in Molecular Biology
+, vol 196. Humana Press. https://doi.org/10.1385/1-59259-274-0:111
+Eruslanov, E., Kusmartsev, S. (2010). Identification of ROS Using Oxidized DCFDA and Flow-Cytometry. In:
+Armstrong, D. (eds) Advanced Protocols in Oxidative Stress II. Methods in Molecular Biology, vol 594. Humana
+Press, Totowa, NJ. https://doi.org/10.1007/978-1-60761-411-1_4
+Muñoz-Sánchez G, Godínez-Méndez LA, Fafutis-Morris M, Delgado-Rizo V. Effect of Antioxidant Supplementation
+on NET Formation Induced by LPS In Vitro; the Roles of Vitamins E and C, Glutathione, and N-acetyl Cysteine. Int J
+Mol Sci. 2023 Aug 24;24(17):13162. doi: 10.3390/ijms241713162. PMID: 37685966; PMCID: PMC10487622.
+20m
+2m
+18m
+Flow Cytometry Analysis
+20m
+Data Analysis and Interpretation
+protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
+January 21, 2025
+6/6

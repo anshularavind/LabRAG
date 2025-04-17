@@ -1,0 +1,539 @@
+Apr 08, 2025 Version 5
+Monkeypox virus multiplexed PCR amplicon sequencing
+(PrimalSeq)  V.5
+DOI
+dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+Nicholas F.G. Chen* , Luc Gagne* , Matthew Doucette , Sandra Smole , Erika Buzby , Joshua Hall ,
+Stephanie Ash , Rachel Harrington , Seana Cofsky , Selina Clancy , Curtis J Kapsak , Joel Sevinsky ,
+Kevin Libuit , Mallery I Breban , Chrispin Chaguza , Nathan D. Grubaugh , Daniel J. Park , Jiusheng Deng ,
+Crystal Gigante , Glen R. Gallagher# , Chantal B.F. Vogels#
+Department of Epidemiology of Microbial Diseases, Yale School of Public Health;
+Massachusetts Department of Public Health; Theiagen Genomics;
+Broad Institute, Cambridge, Massachusetts; CDC
+Nathan D Grubaugh
+Department of Epidemiology of Microbial Diseases, Yale Schoo...
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+1
+1
+1
+4
+5
+5
+2
+1
+1
+2
+3
+4
+5
+DOI: dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+Protocol Citation: Nicholas F.G. Chen*, Luc Gagne*, Matthew Doucette, Sandra Smole, Erika Buzby, Joshua Hall, Stephanie Ash,
+Rachel Harrington, Seana Cofsky, Selina Clancy, Curtis J Kapsak, Joel Sevinsky, Kevin Libuit, Mallery I Breban, Chrispin
+Chaguza, Nathan D. Grubaugh, Daniel J. Park, Jiusheng Deng, Crystal Gigante, Glen R. Gallagher#, Chantal B.F. Vogels# 2025.
+Monkeypox virus multiplexed PCR amplicon sequencing (PrimalSeq) . protocols.io
+https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5Version created by Chantal Vogels
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: December 12, 2022
+Last Modified: April 08, 2025
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+1/19
+
+Protocol Integer ID: 126391
+Keywords: Monkeypox, MPXV, Amplicon sequencing, PrimalSeq, hMPXV
+Disclaimer
+DISCLAIMER – FOR INFORMATIONAL PURPOSES ONLY; USE AT YOUR OWN RISK
+The protocol content here is for informational purposes only and does not constitute legal, medical, clinical,
+or safety advice, or otherwise; content added to protocols.io is not peer reviewed and may not have
+undergone a formal approval of any kind. Information presented in this protocol should not substitute for
+independent professional judgment, advice, diagnosis, or treatment. Any action you take or refrain from
+taking using or relying upon the information presented here is strictly at your own risk. You agree that
+neither the Company nor any of the authors, contributors, administrators, or anyone else associated with 
+protocols.io, can be held responsible for your use of the information contained in or linked to this protocol
+or any of our Sites/Apps and Services.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+2/19
+
+Abstract
+Version 5 Updates: 
+Release of updated primer scheme (v1.1) that includes 11 additional primers to be spiked into the original primer
+scheme to improve coverage when sequencing clade I viruses. See materials tab for primer information and
+step 8 for new clade I reference and BED files. 
+Complete validation study: https://doi.org/10.1101/2022.10.14.22280783
+Background: The current global outbreak of human Monkeypox virus (hMPXV) concurrent with an ongoing
+SARS-CoV-2 pandemic has further highlighted the need for genomic surveillance and pathogen whole genome
+sequencing. While metagenomic and hybrid capture sequencing approaches were used to sequence many of
+the early mpox cases, the viability of these methods is dependent on samples with high viral DNA
+concentrations. Given the atypical clinical presentation of cases associated with the current outbreak and
+uncertainty regarding viral load across both the course of infection and anatomical body sites, there is a strong
+need for a more sensitive and broadly applicable sequencing approach. Amplicon-based sequencing
+(PrimalSeq) was initially developed for sequencing of Zika virus, and later adapted as the main sequencing
+approach for SARS-CoV-2. Here, we used PrimalScheme to design a primer scheme for hMPXV and we
+validated it with widely used SARS-CoV-2 sequencing protocols. Based on initial validation, our approach
+shows notably higher depth and breadth of coverage across the genome, particularly with higher PCR cycle
+threshold (Ct) samples, as compared to metagenomic sequencing. While further testing is needed, the early
+success of this approach has significant implications for sequencing efforts of the current hMPXV outbreak
+and serves as a proof of concept of amplicon-based sequencing for use with other large-genome DNA viruses
+and potentially bacterial genomes.
+Overview of Design: We used PrimalScheme (https://primalscheme.com/) to generate an hMPXV primer
+scheme using a pre-outbreak A.1 lineage reference genome (GenBank accession: MT903345). The primer
+scheme comprises a total of 163 primer pairs with an amplicon length ranging between 1597 and 2497 bp
+(average length of 1977 bp). The primer scheme is compatible with current ARTIC and COVIDSeq SARS-CoV-2
+sequencing protocols, and while validated only with Illumina library prep methods and sequencing platforms, it
+would likely see a high degree of success with other sequencing platforms such as the Oxford Nanopore
+Technologies MinION. 
+Initial Validation: We validated our hMPXV primer scheme with clinical specimens at the Massachusetts
+Department of Public Health, Massachusetts State Public Health Laboratory under the IRB Project Titled “Rash
+Illness: Alternate Specimen Types and Sequencing” (protocol number 1917413). A total of 25 clinical specimens
+were included in this initial validation comprised of both throat and swabs of fluid from lesions of 8 individuals,
+belonging to the current outbreak-associated hMPXV B.1 lineage as determined by prior characterization at the
+Centers of Disease Control and Prevention. Ct values were determined with the non-variola orthopox
+diagnostic qPCR assay developed for use by the Laboratory Response Network (Rapid Diagnostic Testing for
+Response to the Monkeypox Outbreak — Laboratory Response Network, United States, May 17–June 30,
+2022 | MMWR (cdc.gov)). Clinical samples ranged in cycle threshold (Ct) values from 15.03 (high viral
+concentration) to 34.63 (low viral concentration), and each sample was sequenced in parallel using a
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+3/19
+
+metagenomics approach and the provided amplicon-based approach. Extractions and sequencing analysis
+were performed in accordance with current biosafety guidance including extraction in a BSL-3 setting. An
+evaluation of site-specific biosafety practices should be developed in consultation with your organization’s
+biosafety officer. Libraries were prepared with the Illumina DNA prep kit and sequenced on the MiSeq (v2 kit
+running 2x150 nt reads). Consensus genomes were generated at 10X coverage using the TheiaCoV_Illumina_PE
+Workflow Series on Terra.bio. An hMPXV “fork” was developed for us by Curtis Kapsak from Theiagen, which
+included the hMPXV reference sequence, primer scheme, and consensus genome length, and can currently be
+accessed at: https://github.com/theiagen/public_health_viral_genomics/tree/cjk-MPXV-theiacov. We found
+comparable genome coverage between amplicon and metagenomic sequencing with low Ct (<18) samples, yet
+a significant increase in genome coverage with amplicon sequencing in higher Ct samples (>18; Figure 1A.)
+The library clean up stage of the amplicon based Illumina DNA prep protocol was conducted using the
+‘standard DNA input’ option for comparison to metagenomics. Following optimization with 15 additional paired
+samples unrelated to the initial 10 samples, we found improved genome coverage with higher Ct samples (>25)
+using the ‘small PCR amplicon input’ option of the Illumina DNA prep protocol (Figure 1B.) Our findings
+highlight how amplicon-based approaches can significantly expand hMPXV sequencing to a wider variety of
+samples. 
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+4/19
+
+Amongst samples with a low Ct (<18), genome coverage via amplicon sequencing was consistently >97%, with
+minimal amplicon drop-outs (Figure 2). Amplicons 11, 75, and 118 showed consistent drop-out across the
+sequenced samples, while none of the primers had mismatches, except for a single nucleotide mismatch in the
+11_RIGHT primer. We did obtain coverage for these amplicons when sequencing clade IIa DNA from cultured
+virus (strain USA-2003; NR-4928) obtained from BEI Resources (NIAID, NIH). This suggests that the dropouts
+of these primers may be a specific issue related to the current hMPXV B.1 lineage genomes. As this protocol is
+still in development, we will further investigate performance as we continue to sequence additional samples. 
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+5/19
+
+Conclusion: We developed an amplicon-based sequencing (PrimalSeq) approach for hMPXV that improved
+the depth and breadth of genome coverage with low viral concentration specimens as compared to
+metagenomic sequencing.
+This protocol represents the fourth iteration of development. Further versions will be uploaded to protocols.io
+with an accompanying description of changes as appropriate. 
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+6/19
+
+Materials
+MPXV Primer Scheme
+V.1 
+Primers may be ordered from any oligonucleotide company using the following file as a reference. For instructions
+on how to prepare hMPXV Primer Pool 1 and 2 (10 uM) see the "Unpooled Primers" fork of step 1 in the protocol.
+MPXV-primer_genome-positions.tsv
+Our pre-pooled primer scheme (v.1) can also be ordered through Integrated DNA Technologies (IDT) with the
+following link. For preparation instructions, follow the "IDT Pre-Pooled Primers" fork of step 1 in the protocol.
+https://go.idtdna.com/Yale-Mpox-Amplicon-Panel-Request-Consult.html
+V1.1  
+An additional 11 primers were designed to improve coverage when sequencing clade I viruses. This improved
+scheme can be used to sequence both clade I and II viruses. If you already have V1 primers, you can order the 11
+primers and spike into existing primer pools (5 odd numbered primers to be added to pool 1 and 6 even numbered
+primers to be added to pool 2) at equal primer concentrations. 
+MPXV_spike-in_v1.1.xlsx 10KB  (new primers only)
+MPXV_primers_v1.1.fasta 13KB  (all V1.1 primers combined)
+Library Preparation Method: Illumina DNA Prep
+Reagents: https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/nextera-dna-flex.html
+https://www.neb.com/products/m0494-q5-hot-start-high-fidelity-2x-master-
+mix#Product%20Information
+Library Preparation Method: CovidSeq
+Reagents: https://www.illumina.com/products/by-type/ivd-products/covidseq.html
+Illumina COVIDSeq Test Box 1 – 3072 Samples, Part # 20044408
+Reagent
+Description 
+Storage
+ITB
+Illumina Tune Beads 
+Room Temperature
+ST2 HT 
+Stop Tagment Buffer 2 HT
+Room temperature, post-
+amp
+environment
+Illumina COVIDSeqTest Box 2 – 3072 Samples, Part # 20044409
+EBLTS HT
+Enrichment BLT HT 
+2°C to 8°C post-amp
+environment 
+A
+B
+C
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+7/19
+
+TWB HT 
+Tagmentation Wash Buffer
+HT 
+2°C to 8°C post-amp
+environment 
+RSB HT
+Resuspension Buffer HT
+2°C to 8°C, post-amp
+environment
+Illumina COVIDSeq Test Box 3 – 3072 Samples, Part # 20044410
+IPM HT 
+Enhanced PCR Mix HT
+-25°C to -15°C, pre-amp
+environment
+TB1 HT 
+Tagmentation Buffer 1 HT
+-25°C to -15°C, post-amp
+environment
+EPM HT
+Enhanced PCR Mix HT
+-25°C to -15°C, pre-amp
+environment
+Index Adapater Part Numbers : 20043132, 20043133, 20043134, 20043135
+Index Adapters
+IDT for Illumina- PCR
+Indexes  Set 1-4
+Room Temperature
+Additional Materials
+Reagent
+Description 
+Storage
+80% EtOH 
+80% Ethanol 
+Room
+Temperature
+Nuclease-free
+water
+Room
+Temperature
+Safety warnings
+Processing of any sample type which could potentially be positive for hMPXV should be conducted in
+BSL2+ settings. Before starting work with these samples, please contact your local EHS (environment,
+health and safety) or biosafety office for proper guidance on how to work with these samples in your
+laboratory.
+A
+B
+C
+A
+B
+C
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+8/19
+
+Before start
+This protocol is currently in the developmental phase. It is for research purposes only and should not be used in a
+diagnostic capacity. 
+If using clinical samples, DNA will need to be extracted and purified prior to beginning library preparation.
+Primer diluting and pooling requires several hours and may be conducted well in advance so long as the pooled
+primers are stored at -20°C.
+Following primer dilution and pooling, this workflow can be completed in one day, however, it is recommended to
+be conducted across two, with the amplicon generation step on the first day and all subsequent wet-lab steps on
+the second day. 
+Protocol Recommendations:
+To maximize sequencing coverage, we recommend the following best practices based on our multi-site validation
+study: 
+1. Prioritizing samples with cycle threshold (Ct) values <29 if resources are limited
+2. Generating at least 1 million sequencing reads per sample
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+9/19
+
+1
+Primer Source
+1.1
+Dilute primers to a working concentration of 10uM with nuclease-free water (i.e. 1:10
+dilution)
+1.2
+*Safe Stopping Point: Pooled Primers Can Be Stored at -20°C*
+2
+Library Preparation Method
+3
+Reagents:
+3.1
+In two separate tubes, prepare the following master mixes: 
+STEP CASE
+IDT Pre-Pooled Primers
+From 56 to 81 steps
+Integrated DNA Technologies (IDT) Pre-Pooled Yale hMPXV Amplicon Panel:
+https://go.idtdna.com/Yale-Mpox-Amplicon-Panel-Request-Consult.html
+STEP CASE
+Illumina CovidSeq Test (RUO)
+53 steps
+Amplicon Generation
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+10/19
+
+Note
+Master mix volumes are for one reaction and do not account for lost volume due to
+pipetting. Multiply volumes by reaction number accordingly. 
+3.2
+Label two sets of PCR tubes/plates for Pool 1 and Pool 2
+3.3
+Add the following: 
+20 µL
+Pool 1 master mix to each Pool 1 tube/well
+20 µL
+Pool 2 master mix to each Pool 2 tube/well
+3.4
+Add 
+5 µL  DNA to each tube in both sets
+Mix by pipetting up and down 10 times
+Briefly centrifuge tubes/plates
+Note
+Be sure to include a negative PCR control (NTC; nuclease-free water) for each pool
+3.5
+Place on thermocycler and run the following program (choose preheat lid option):
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+11/19
+
+3.6
+*Safe Stopping Point: Amplified DNA may remain in the thermocycler at 4°C or stored
+at -20°C until ready to use*
+4
+Reagents: 
+4.1
+Spin down PCR tubes/plates
+4.2
+Prepare the following master mix:
+Amplicon Tagmentation and Clean Up
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+12/19
+
+4.3
+In each PCR tube add:
+30 µL
+Master mix
+10 µL
+Pool 1 amplicons
+10 µL   Pool 2 amplicons
+For a total reaction volume of 
+50 µL  per PCR tube/well
+Note
+Pooling of amplicons should be conducted on a dedicated post-PCR bench to prevent
+contamination 
+4.4
+Mix by pipetting up and down and briefly centrifuge
+4.5
+Place on thermocycler and run the following program (choose preheat lid option):
+4.6
+Once the thermocycler reaches 
+10 °C  , remove tubes/plates and spin down
+4.7
+Add 
+10 µL
+ST2 to each tube/well, mix by pipetting up and down, and briefly
+centrifuge
+4.8
+Incubate at 
+Room temperature  for 
+00:05:00
+4.9
+Place on magnetic stand and wait until liquid is clear (a few minutes)
+4.10
+Remove and discard all supernatant
+5m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+13/19
+
+4.11
+Remove tubes/plates from magnetic stand and add 
+100 µL
+TWB to each tube/well
+Mix by pipetting up and down 10 times and spin down. Be careful to not introduce
+bubbles.
+4.12
+Repeat steps 4.9 - 4.11. Leave the supernatant after the second wash so that the
+beads don’t dry out
+5
+Reagents: 
+5.1
+Prepare the following master mix:
+5.2
+Place the tubes/plates with tagmented amplicons on the magnetic stand and remove the
+supernatant once the liquid is clear
+5.3
+Use a 20µL pipette to remove any residual TWB from tubes/wells
+5.4
+Remove the tubes/plates from the magnetic stand
+5.5
+Add 
+40 µL
+master mix to each tube/well
+5.6
+Add 
+10 µL
+ dual-barcoded index adapters to each tube/well
+Amplify Tagmented Amplicons
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+14/19
+
+Note
+Note which set of indexes are used for each tube for bioinformatic processing 
+5.7
+Pipette up and down to mix and spin down
+5.8
+Place on thermocycler and run the following program (choose preheat lid option):
+6
+Reagents: 
+6.1
+Briefly centrifuge tubes/plates
+6.2
+Place on magnetic stand and wait until liquid is clear (a few minutes)
+6.3
+Pool libraries by equal volume:
+Pool and Clean Up
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+15/19
+
+6.4
+Pipette up and down to mix pooled libraries and briefly spin down
+6.5
+Calculate the volume of ITB to reach a 0.6X beads:total pool volume ratio
+Note
+For example: Total pooled volume is 400 µL (10 samples x 40 µL/sample) 
+then add 0.6 x 400 µL = 240 µL ITB
+6.6
+Mix by pipetting up and down, briefly centrifuge, and incubate at 
+Room temperature
+for 
+00:05:00
+6.7
+Place on magnetic stand and wait until liquid is clear (a few minutes)
+6.8
+Transfer supernatant to a new tube (do not discard, this is your final library). This
+volume will be slightly lower than the total combined volume
+Note
+For example: 400µL+ 240µL = total 640µL  > transfer 630µL
+6.9
+Calculate the volume of beads to add to the supernatant to attain a second clean-up
+beads:sample ratio of 0.9X:
+5m
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+16/19
+
+Vo = total volume of sample + beads from step 5.5
+Vt = transferred volume of supernatant
+Note
+For example: 630µL of supernatant is transferred to a new tube 
+Add 118µL of ITB to 630µL of transferred supernatant
+Calculation source: https://support.illumina.com/bulletins/2020/07/library-size-selection-
+using-sample-purification-beads.html
+6.10
+Add beads to supernatant, mix by pipetting up and down, briefly centrifuge, and
+incubate at 
+Room temperature  for 
+00:05:00
+6.11
+Place on magnetic stand and wait until liquid is clear (a few minutes)
+6.12
+Carefully discard supernatant
+6.13
+Add 
+1000 µL
+80% EtOH
+6.14
+Wait 
+00:00:30
+6.15
+Repeat steps 6.12 - 6.14
+5m
+30s
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+17/19
+
+6.16
+Remove supernatant using a 20µL pipette to remove all residual EtOH
+6.17
+Add 
+55 µL of RSB to the tube, mix by pipetting up and down, and briefly centrifuge
+6.18
+Incubate at 
+Room temperature for 
+00:02:00
+6.19
+Place on magnetic stand and wait until liquid is clear (a few minutes)
+6.20
+Transfer 
+50 µL  of final pooled library to a new 1.5mL tube
+6.21
+Quantify library on a Qubit and obtain fragment distribution using a Bioanalyzer/Tape
+Station
+Note
+Qubit SOP: 
+Agilent High Sensitivity DNA Kit Gui…
+Bioanalyzer SOP:  
+Agilent High Sensitivity DNA Kit Gui…
+7
+Protocol validated on the MiSeq (v2 kit running 2x150 nt reads)
+Note
+Note: For sequencing we recommend generating at least 1 million reads per sample for
+optimal sequencing coverage 
+Sequencing may be performed on Illumina and Oxford Nanopore Technologies
+sequencing platforms following standard protocols 
+2m
+Sequencing
+Bioinformatics/Analysis
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+18/19
+
+8
+Sequencing results may be analyzed utilizing a standard amplicon sequencing
+bioinformatics pipeline, including those employed for SARS-CoV-2 sequencing. 
+Note
+If utilizing a SARS-CoV-2 based bioinformatics pipeline, adjustments may be required to
+account for the consensus genome length 
+Optional bioinformatics pipeline: Terra.bio_TheiaCov_Illumina_PE_workflow
+V.1 files:
+Reference Sequence (MT903345): 
+MPXV.reference.fasta
+Bed file: 
+MPXV.primer.bed
+New V1.1 files:
+Reference Sequence (NC_003310): 
+NC_003310.fasta
+Bed file: 
+MPXV_primers_v1.1.bed
+protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvob1nbl4o/v5
+April 8, 2025
+19/19

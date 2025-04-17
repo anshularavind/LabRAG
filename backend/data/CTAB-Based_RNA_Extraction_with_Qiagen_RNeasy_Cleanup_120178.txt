@@ -1,0 +1,381 @@
+Feb 15, 2025
+CTAB-Based RNA Extraction with Qiagen RNeasy Cleanup
+DOI
+dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+Gonzalo Villarino
+Cornell University
+Puregene
+Gonzalo Villarino
+Cornell University
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+Protocol Citation: Gonzalo Villarino 2025. CTAB-Based RNA Extraction with Qiagen RNeasy Cleanup. protocols.io
+https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: February 13, 2025
+Last Modified: February 15, 2025
+Protocol Integer ID: 120178
+Keywords: RNA extraction, cannabis RNA isolation, CTAB method, Qiagen RNeasy cleanup, plant RNA purification, secondary
+metabolites removal, high-quality RNA isolation, polysaccharide-rich plant RNA, RNA-seq sample preparation, RT-qPCR RNA
+extraction, column clogging prevention, modified RNA extraction protocol, medicinal plant RNA isolation, chloroform:isoamyl
+alcohol RNA extraction, CTAB + silica column purification
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+1/11
+
+Abstract
+This protocol details a modified RNA extraction method that combines CTAB-based purification with Qiagen
+RNeasy column cleanup, specifically tailored for complex plant tissues like cannabis, which harbor high levels
+of secondary metabolites and polysaccharides. The CTAB extraction step effectively eliminates contaminants
+that could impede downstream applications, ensuring high RNA integrity. The following Qiagen cleanup step
+further improves RNA purity, resulting in high-quality RNA suitable for RT-qPCR, RNA sequencing, and various
+molecular biology applications. This protocol especially benefits researchers working with medicinal plants,
+recalcitrant species, or tissues rich in secondary metabolites. The comparative table provided in this protocol
+showcases key optimizations, contrasts this method with previously published techniques, and offers
+suggested adjustments for further refinements.
+Aspect
+PureGene 
+Protocol
+Published
+Protocols
+Recommended
+Adjustments
+Alternative
+Precipitation
+Method
+Uses Sodium
+Acetate (NaOAc)
+precipitation
+Some protocols
+suggest Lithium
+Chloride (LiCl)
+precipitation for
+polysaccharide-
+rich samples
+Consider testing
+LiCl precipitation if
+polysaccharide
+contamination
+remains
+DNase Treatment
+for Cleaner RNA
+On-Column DNase
+I treatment (15 min)
+Kiss et al. (2024)
+includes DNase
+treatment to
+remove gDNA
+contamination
+Keep DNase
+treatment (15 min
+is sufficient)
+RNA Integrity &
+Yield
+Expected yield: 2-
+91 µg/µl; Air-drying
+step before
+dissolving RNA
+Kiss et al. (2024)
+reports RIN of 7.1–
+8.1 with similar
+workflow
+No major changes
+needed
+Polysaccharide &
+Polyphenol
+Removal
+CTAB (2%), PVP-
+40 (2%), β-
+mercaptoethanol
+(2%)
+Kiss et al. (2024)
+uses β-
+mercaptoethanol
+(10% v/v)
+Increase β-
+mercaptoethanol
+to 10% v/v for
+better secondary
+metabolite removal
+Phase Separation
+& RNA Cleanup
+Chloroform:Isoamy
+l Alcohol (24:1) +
+Qiagen RNeasy
+Cleanup
+Wang &
+Stegemann (2010)
+also integrate
+CTAB with silica
+column purification
+No major changes
+needed
+This comparison reviews the CTAB + Qiagen RNA extraction protocol in relation to established plant RNA extraction
+methods. It assesses critical factors such as polysaccharide removal, phase separation, RNA integrity, precipitation
+techniques, and DNase treatment. Based on insights from the literature, suggested modifications are offered to
+enhance RNA yield and purity.
+A
+B
+C
+D
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+2/11
+
+Attachments
+Kiss et al. - 2024 -...
+1.2MB
+Wang and Stegemann
+-...
+1.3MB
+Liyanage et al. - 20...
+1.1MB
+Guidelines
+This protocol combines CTAB-based RNA extraction for removing polysaccharides and secondary metabolites
+with Qiagen RNeasy column purification for high-purity RNA.
+Work quickly but carefully to prevent RNA degradation—keep samples frozen in LN₂ whenever possible.
+Use fresh reagents and pre-warm CTAB buffer to 65°C before starting.
+Maintain an RNase-free environment by cleaning surfaces with RNaseZap and using filtered RNase-free
+pipette tips.
+Do not overload columns—follow recommended sample volumes to avoid clogging.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+3/11
+
+Materials
+1️⃣ Sample Collection & Preparation:
+Cannabis flowers & scissors
+Weigh boats & precision balance
+Liquid nitrogen (LN₂) & Dewar flask
+Ceramic mortar & pestle
+Cryogenic-safe plastic containers
+2️⃣ Safety & Waste Management:
+Fume hood (for handling chloroform & β-mercaptoethanol)
+Chemical waste collection bottle (HDPE or Glass, 1L or 2L, labeled: "Chloroform:Isoamyl Alcohol Waste –
+Hazardous Chemical Waste")
+Biohazard waste bag (for contaminated disposables)
+Nitrile gloves & safety goggles (for working with hazardous chemicals)
+Absorbent spill pads (for chloroform  & ethanol spills)
+Flammable Storage Cabinet (100% Ethanol & chloroform:isoamyl alcohol are highly flammable)
+3️⃣ RNA Extraction & Phase Separation:
+RNA-Optimized CTAB Extraction Buffer (see Appendix)
+Water bath (65°C, with floating tube racks)
+Chloroform:Isoamyl Alcohol (24:1) – Must be used in fume hood
+Sodium acetate (3 M,  pH 5.2 for RNA precipitation)
+Lithium chloride  (LiCl, 8 M, for RNA precipitation)
+Ethanol 100% & 75% Ethanol
+4️⃣ Qiagen RNeasy Cleanup Kit & Buffers:
+Qiagen RNeasy Plant Mini Kit (for Cleanup Step)
+Buffer RLT (with β-ME added: 10 µL per 1 mL RLT)
+5️⃣ Reagents for CTAB Buffer Preparation:
+CTAB (for RNA extraction buffer preparation)
+PVP-40 (removes polysaccharides and phenolic compounds)
+NaCl (2 M, for CTAB buffer)
+Tris-HCl (pH 8.0, 100 mM)
+EDTA (25 mM, for chelation of RNase cofactors)
+Spermidine (stabilizes RNA during extraction)
+β-mercaptoethanol (2%, prevents oxidation of RNA by phenolics)
+RNase-free water
+6️⃣ Laboratory Equipment & Consumables:
+Heat block
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+4/11
+
+-80°C Freezer (For long-term storage of RNA samples)
+-80°C Freezer (For reagents and RNA samples)
+Water bath (65°C)
+Centrifuge (capable of 12,000 x g, temperature-controlled)
+Racks for Eppendorf 1.5mL tubes
+Pipettes (P1000, P200, P10)
+RNase-free pipette tips (P1000, P200, P10, filtered tips)
+RNaseZap (for surface decontamination of workspace)
+2mL RNase-free tubes  (for sample processing)
+1.5mL RNase-free tubes (for final RNA storage)
+7️⃣ RNA Quality Control & Storage:
+Qubit (for RNA quantification)
+Tapestation ( for RNA integrity check)
+-80
+Safety warnings
+Chloroform:Isoamyl Alcohol is hazardous—always work inside a fume hood and dispose of waste in a
+properly labeled chemical waste container.
+β-Mercaptoethanol is toxic and volatile—handle only in a fume hood and wear gloves.
+Ethanol and chloroform are flammable—keep away from open flames and use only in well-ventilated
+areas.
+Liquid nitrogen (LN₂) can cause severe burns—handle with cryogenic gloves and never seal
+containers with LN₂ inside.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+5/11
+
+Before start
+Prepare all reagents and equipment:
+Pre-warm CTAB buffer to 65°C in a water bath.
+Set up the centrifuge at 4°C and ensure it can reach 12,000 x g.
+Chill spatulas in LN₂ before handling plant material.
+Prepare working space:
+Clean the bench with RNaseZap.
+Set up a fume hood for handling chloroform:isoamyl alcohol and β-mercaptoethanol.
+Label all tubes before starting to avoid confusion.
+Ensure correct PPE (Personal Protective Equipment):
+Wear gloves, safety goggles, and a face mask when handling hazardous chemicals.
+Use cryogenic gloves when working with liquid nitrogen (LN₂).
+Plan your workflow:
+Keep samples frozen until the extraction step.
+Work quickly to minimize RNA degradation.
+Perform all centrifugation steps at the correct speed and temperature.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+6/11
+
+1
+Set up a portable analytical balance in the GH
+2
+Label one tube per cultivar. Use 50 mL Falcon tubes
+3
+Bring RNase-free gloves and sterile tools (scissors, tweezers).
+4
+Cut fresh flowers using sterile scissors (one sample at a time)
+5
+Place the weighed ~100 mg sample into a labeled 50 mL Falcon tube. Poke some holes
+in lid of Falcon tube.
+6
+Flash-freeze the plant material (in 50 mL Falcon tube) immediately in liquid nitrogen.
+7
+Prepare fresh CTAB (see Appendix) before harvesting and grinding, keeping it at
+65°C. Then, start the centrifuge (4°C). 
+8
+Pre-chill spatulas in cryogenic-safe plastic containers with LN₂. Tare the calibrated
+precision balance before weighing samples.
+9
+Immediately flash-freeze in liquid nitrogen (LN2). Using a mortar and pestle, grind to
+a fine powder in  LN2, ensuring the sample remains fully frozen during grinding!
+10
+Use a chilled spatula to transfer the powdered tissue into a 2mL RNase-free tube
+(ensure to use a 2mL tube).
+Preparation Before Going to the Greenhouse (GH)
+Go to the greenhouse and collect fresh cannabis flowers
+Tissue Collection & Homogenization
+RNA Extraction with CTAB
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+7/11
+
+11
+Add 1 mL (use the P1000 pipette) of pre-heated CTAB buffer to the 2 mL RNase-free
+tube containing plant powder.
+12
+Vortex thoroughly for 1 minute
+13
+Incubate in a water bath at 65°C for 10 minutes, mixing occasionally (invert the tubes).
+14
+Add an equal volume (1mL) of chloroform:isoamyl alcohol  
+15
+Vortex for 30 seconds.
+16
+Incubate for 15 minutes at room temperature for optimal phase separation
+17
+Centrifuge at 12,000 x g for 10 minutes at 4°C
+18
+Transfer ~ 500 µL of the upper aqueous phase (RNA) to a fresh 1.5 mL RNase-free tube
+(do not disturb the interface between the aqueous vs. organic phase). Use the P200
+pipette. The aqueous phase should be clear and colorless to pale yellow
+19
+Add 50 µL of 3M NaOAc and 1250 µL of 100% ethanol. Invert the tube 5–6 times to mix 
+20
+Incubate at –20°C for 1 hour 
+21
+Centrifuge at 12,000 x g for 20 min at 4°C. The RNA will be visible as a white pellet
+(bottom of the tube)
+22
+Discard the supernatant by removing the liquid slowly to discard the supernatant. Be
+careful not to touch the pellet with the pipette tip.
+RNA Precipitation: Sodium Acetate (NaOAc) + Ethanol (Standard Method)
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+8/11
+
+23
+Wash the pellet with 1 mL of 75% ethanol. Invert the tube 5–6 times. The goal is to
+ensure the RNA pellet is well-washed without disrupting it. DO NOT VORTEX
+24
+Centrifuge at 12,000 x g for 5 minutes at 4°C. Pipette the ethanol out with a P200
+25
+Repeat Steps 18-19
+26
+Air-dry the RNA pellet for 10 minutes at RT to evaporate the residual ethanol
+27
+Pre-warm 400 µL Buffer RLT (with β-ME added) to 37°C in heat block 
+28
+Dissolve RNA pellet in 400 µL Buffer RLT (with β-ME added). Pipette up & down gently
+until fully dissolved (If RNA does not fully dissolve, incubate at 37°C for 5 min and vortex
+briefly)
+29
+Pass the sample through a QIAshredder spin column (lilac) placed in a 2 mL collection
+tube. Centrifuge at ≥8000 x g for 2 min. 
+30
+Carefully transfer the cleared lysate (~400 µL flow-through) to a new tube, avoiding
+any visible pellet at the bottom. Discard the QIAshredder  column.
+31
+Add 200 µL of ethanol (0.5x volume, 96–100%) to the flow-through. Mix gently by
+pipetting up and down
+32
+Transfer the sample onto a pink RNeasy spin column (in a new 2 mL collection tube).
+33
+Centrifuge at ≥8000 x g for 15 sec. Discard the flow-through.
+34
+Add 700 µL Buffer RW1 to the spin column. Centrifuge at ≥8000 x g for 15 sec. Discard
+flow-through
+RNA Cleanup with Qiagen RNeasy Plant Mini Kit
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+9/11
+
+35
+Prepare DNase incubation mix:  10 μL DNase I (RNase-free)+ 70 μL Buffer  RDD (from
+Qiagen RNase-Free DNase Set) + Mix gently  (pipetting up and down)
+36
+Apply the DNase mix (80 μL) directly onto the membrane of the RNeasy spin column
+37
+Incubate at room temperature for 15 minutes to "kill" DNA
+38
+Add 350 µL Buffer RW1 to the spin column to wash out DNase.
+39
+Centrifuge at ≥8000 x g for 15 sec. Discard flow-through.
+40
+Add 500 µL Buffer RPE. Centrifuge at ≥8000 x g for 15 sec. Discard flow-through
+41
+Add 500 µL Buffer RPE again. Centrifuge at ≥8000 x g for 2 min(removes residual
+ethanol).
+42
+Place the RNeasy spin column in a new 2 mL collection tube. Centrifuge at full speed
+(≥10,000 rpm) for 1 min (ensures ethanol removal).
+43
+Transfer the RNeasy spin column to a new 1.5 mL RNase-free tube.
+44
+Add 30 µL of pre-warmed RNase-free water (37°C) directly onto the membrane. Let it sit
+for 1 min
+45
+Centrifuge at ≥8000 x g for 1 min to elute RNA.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+10/11
+
+Protocol references
+A Modified CTAB Method for the Extraction of High-Quality RNA from Various Plant Species
+* Summary: Optimized CTAB protocol for extracting RNA from woody and herbaceous plants.
+* Link: https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01198-z
+Extraction of High-Quality RNA from Polysaccharide Matrices Using CTAB
+* Summary: Explains how CTAB efficiently isolates RNA from polysaccharide-rich plant tissues.
+* Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2813910/
+A CTAB Protocol for Obtaining High-Quality Total RNA from Cinnamon
+* Summary: Optimized CTAB method for RNA extraction from different tissues of cinnamon plants.
+* Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8007690/
+NOTE:  these 3 PDFs are added in the "Description" section
+protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
+February 14, 2025
+11/11

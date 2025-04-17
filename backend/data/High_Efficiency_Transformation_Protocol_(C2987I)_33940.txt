@@ -1,0 +1,167 @@
+Feb 14, 2022 Version 2
+High Efficiency Transformation Protocol (C2987I) V.2
+DOI
+dx.doi.org/10.17504/protocols.io.bddui26w
+New England Biolabs
+New England Biolabs
+New England Biolabs (NEB)
+Tech. support phone: +1(800)632-7799 email: info@neb.com
+New England Biolabs
+New England Biolabs
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.bddui26w
+External link: https://www.neb.com/protocols/0001/01/01/high-efficiency-transformation-protocol-c2987
+Protocol Citation: New England Biolabs 2022. High Efficiency Transformation Protocol (C2987I). protocols.io
+https://dx.doi.org/10.17504/protocols.io.bddui26wVersion created by New England Biolabs
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it’s working
+Created: March 09, 2020
+Last Modified: February 14, 2022
+Protocol Integer ID: 33940
+Keywords: Transformation, Bacterial, C2987I,
+protocols.io | https://dx.doi.org/10.17504/protocols.io.bddui26w
+February 14, 2022
+1/5
+
+Abstract
+This is the protocol for C2987I cells. If you are using the C2987H cells, please refer to this protocol.
+Guidelines
+Transformation Protocol Variables
+Thawing: Cells are best thawed on ice and DNA added as soon as the last bit of ice in the tube disappears. Cells
+can also be thawed by hand, but warming above 0°C will decrease the transformation efficiency.
+Incubation of DNA with Cells on Ice: For maximum transformation efficiency, cells and DNA should be incubated
+together on ice for 30 minutes. Expect a 2-fold loss in transformation efficiency for every 10 minutes this step is
+shortened.
+Heat Shock: Both the temperature and the timing of the heat shock step are important and specific to the
+transformation volume and vessel. Using the transformation tube provided, 30 seconds at 42°C is optimal.
+Outgrowth: Outgrowth at 37°C for 1 hour is best for cell recovery and for expression of antibiotic resistance.
+Expect a 2-fold loss in transformation efficiency for every 15 minutes this step is shortened. SOC gives 2-fold
+higher transformation efficiency than LB medium; and incubation with shaking or rotating the tube gives 2-fold
+higher transformation efficiency than incubation without shaking.
+Plating: Selection plates can be used warm or cold, wet or dry without significantly affecting the transformation
+efficiency. However, warm, dry plates are easier to spread and allow for the most rapid colony formation.
+DNA Contaminants to Avoid
+Contaminant
+Removal Method
+Detergents
+Ethanol precipitate
+Phenol
+Extract with chloroform and ethanol precipitate
+Ethanol or Isopropanol
+Dry pellet before resuspending
+PEG*
+Column purify or phenol/chloroform extract and ethanol
+precipitate
+DNA binding proteins (e.g.
+Ligase)
+Column purify or phenol/chloroform extract and ethanol
+precipitate
+* Ideally, DNA for transformation should be purified and resuspended in water or TE. However, up to 10 µl of DNA
+directly from a ligation mix can be used with only a two-fold loss of transformation efficiency. Where it is necessary to
+maximize the number of transformants (e.g. a library), a purification step, either a spin column or phenol/chloroform
+extraction and ethanol precipitation should be added.
+A
+B
+protocols.io | https://dx.doi.org/10.17504/protocols.io.bddui26w
+February 14, 2022
+2/5
+
+Materials
+MATERIALS
+SOC Outgrowth Medium - 100 ml New England Biolabs Catalog #B9020S
+NEB 5-alpha Competent E.coli (High Efficiency) - 6x0.2 ml New England Biolabs Catalog #C2987I
+Safety warnings
+Please refer to the Safety Data Sheets (SDS) for health and environmental hazards. 
+protocols.io | https://dx.doi.org/10.17504/protocols.io.bddui26w
+February 14, 2022
+3/5
+
+1
+Thaw a tube of NEB 5-alpha Competent E. coli cells 
+On ice  until the last ice crystals
+disappear.  
+Note
+Cells are best thawed on ice and DNA added as soon as the last bit of ice in the tube
+disappears. Cells can also be thawed by hand, but warming above 0°C will decrease the
+transformation efficiency.
+2
+Mix gently and carefully pipette 
+50 µL cells  into a transformation tube 
+On ice . 
+3
+Add 
+1 µL -
+5 µL  containing 
+1 pg -
+100 ng  of plasmid DNA to the cell
+mixture.
+4
+Carefully flick the tube 4-5 times to mix cells and DNA. Do not vortex.
+5
+Place the mixture 
+On ice  for 
+00:30:00 . Do not mix. 
+Note
+For maximum transformation efficiency, cells and DNA should be incubated together on
+ice for 30 minutes. Expect a 2-fold loss in transformation efficiency for every 10 minutes
+this step is shortened.
+6
+Heat shock at exactly 
+42 °C  for exactly 
+00:00:30 . Do not mix. 
+Note
+Both the temperature and the timing of the heat shock step are important and specific to
+the transformation volume and vessel. Using the transformation tube provided, 30
+seconds at 42°C is optimal.
+7
+Place 
+On ice  for 
+00:05:00 . Do not mix.
+8
+Pipette 
+950 µL room temperature SOC  into the mixture.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.bddui26w
+February 14, 2022
+4/5
+
+9
+Place at 
+37 °C  for 
+01:00:00 , shaking vigorously (
+250 rpm ) or rotating. 
+Note
+Outgrowth at 37°C for 1 hour is best for cell recovery and for expression of antibiotic
+resistance. Expect a 2-fold loss in transformation efficiency for every 15 minutes this step
+is shortened. SOC gives 2-fold higher transformation efficiency than LB medium; and
+incubation with shaking or rotating the tube gives 2-fold higher transformation efficiency
+than incubation without shaking.
+10
+Warm selection plates to 
+37 °C .
+Note
+Selection plates can be used warm or cold, wet or dry without significantly affecting the
+transformation efficiency. However, warm, dry plates are easier to spread and allow for the
+most rapid colony formation.
+11
+Mix the cells thoroughly by flicking the tube and inverting.
+12
+Perform several 10-fold serial dilutions in SOC.
+13
+Spread 
+50 µL -
+100 µL  of each dilution onto a selection plate.
+14
+Incubate 
+Overnight  at 
+37 °C .
+Note
+Alternatively, incubate at 
+30 °C  for 24-36 hours or 
+25 °C  for 
+48:00:00 .
+protocols.io | https://dx.doi.org/10.17504/protocols.io.bddui26w
+February 14, 2022
+5/5

@@ -1,0 +1,81 @@
+Apr 02, 2017 Version 9
+Euplotes crassus transfection using FuGene HD
+Transfection Reagent as vehicle (provisional) V.9
+DOI
+dx.doi.org/10.17504/protocols.io.hjdb4i6
+RACHELE CESARONI
+University of Bern, Institute of Biology
+Protist Research to Opti…
+Rachele Cesaroni
+Universität Bern
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.hjdb4i6
+Protocol Citation: RACHELE CESARONI 2017. Euplotes crassus transfection using FuGene HD Transfection Reagent as vehicle
+(provisional). protocols.io https://dx.doi.org/10.17504/protocols.io.hjdb4i6
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+Created: April 02, 2017
+Last Modified: February 07, 2018
+Protocol Integer ID: 5445
+protocols.io | https://dx.doi.org/10.17504/protocols.io.hjdb4i6
+April 1, 2017
+1/3
+
+1
+Collect 4 x 104 well-fed Euplotes crassus cells (we used E.coli as the only food source)
+by centrifugation at 400 rcf for 3 minutes.
+2
+Wash the cells twice with artificial sea water (see attachment for the recipe) and once
+with 500 mM sorbitol, 0.5 mM Tris-HCl, pH 7.0 (400 rcf for 3 minutes each time). Then
+resuspend Euplotes crassus cells in 50 μl of the medium (500 mM sorbitol, 0.5 mM Tris-
+HCl, pH 7.0). To get this small volume you may require an additional minute of
+centrifugation.
+Note
+Recipe for complete sea water (1 L):
+36 g Reef Crystals
+1 ml Walne's solution
+1 ml of 10 μg/ml FeSO4
+0.2 ml of 2 mg/ml thiamine (light sensitive; store at 4 ºC)
+Add distilled water up to 1 L
+3
+Transfer the cells into wells within a 96-well plate for transfection.
+4
+Allow FuGene HD Transfection Reagent to reach room temperature, and then mix it by
+inverting or vortexing briefly (if you see a precipitate, briefly warm it at 37°C, and then let
+it reach room temperature).
+5
+Add 90-98 μl of medium (500 mM sorbitol, 0.5 mM Tris-HCl, pH 7.0) at room temperature
+and 4 μg of DNA in MilliQ H2O (0.2-1 μg/μL) to an Eppendorf tube and vortex (after
+adding the DNA the final volume must be 100 μl).
+6
+Add 6 μl of FuGene HD Transfection Reagent directly to the medium and mix
+immediately.
+7
+Icubate FuGene HD Transfection Reagent and DNA mixture for 15 minutes at room
+temperature.
+8
+Add 10 μl of the FuGene HD Transfection Reagent and DNA mixture to the 50 μl of
+Euplotes crassus cells in medium (mix everything by pipetting).
+9
+One hour after addition of FuGene/DNA complexes, add 50 μl of artificial sea water to
+the cells. 
+10
+After another hour, add to the cells other 50 μl of artificial sea water.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.hjdb4i6
+April 1, 2017
+2/3
+
+11
+An hour later harvest the cells (400 rcf for 3 minutes), and wash them twice with artificial
+sea water (400 rcf for 3 min each time). Then resuspend them in 400 μl of the artificial
+sea water.
+12
+Transfer the cells into glass depression wells for subsequent monitoring.
+13
+Incubate the cells at 24°C, then examine them by fluorescence microscopy to determine
+expression of the construct.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.hjdb4i6
+April 1, 2017
+3/3

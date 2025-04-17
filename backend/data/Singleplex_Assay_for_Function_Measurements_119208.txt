@@ -1,0 +1,225 @@
+Jan 28, 2025 Version 3
+Singleplex Assay for Function Measurements V.3
+DOI
+dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+David Ross
+NIST
+Open Datasets Initiative
+Align to Innovate
+1
+1
+DOI: dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+Protocol Citation: David Ross 2025. Singleplex Assay for Function Measurements. protocols.io
+https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3Version created by Open Datasets Initiative
+License: This is an open access protocol distributed under the terms of the Creative Commons Attribution License,  which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited
+Protocol status: Working
+We use this protocol and it's working
+Created: April 25, 2024
+Last Modified: January 28, 2025
+Protocol Integer ID: 119208
+Keywords: Deep mutational scanning, protein sequence-function relationships, fitness landscape, laboratory automation, flow
+cytometry
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+1/7
+
+Disclaimer
+The protocol outlined in this document was created as a part of the Pooled, Growth-Based Assays for
+Protein Function Measurements pipeline for Align to Innovate’s Open Dataset Initiative. Align to Innovate is a
+non-profit research organization operating under open science principles with the goal of improving
+science research with programmable experiments. The Open Datasets Initiative is working to accelerate
+community-driven science with the use of automated labs to pioneer robust data collection methods and
+curated, high-fidelity, public biological datasets amenable to machine learning. This work was supported by
+Align to Innovate’s Open Datasets Initiative which receives philanthropic funding in part from Griffin Catalyst.
+Abstract
+This protocol outlines an assay for measuring the function of plasmid variants in singleplex. 
+The inputs include separate E. coli glycerol stocks for each variant. The protocol begins with several growths
+which convert the separate glycerol stocks into cultures that have reach stationary phase in a 96-well plate. The
+glycerol stocks are first grown overnight in separate tubes. The next morning, the optical density (OD) of each
+culture is measured, and then each culture is distributed into a 96-well growth plate. This plate is placed in a plate
+reader/incubator to grow to stationary phase (~12 hours) without antibiotics or additives (except those required for
+plasmid maintenance). After this point, the cultures are ready to act as an inputs for next growth cycle.
+Throughout the subsequent growths, optical density (OD) and fluorescent measurements are recommended to be
+taken every 5 minutes and at the end of each growth plate's incubation. The growth cycles are all ~3 hours long,
+so that cells stay in mid-log phase. At the end of the last growth cycle, a small amount of the plated cultures act as
+input for quantification using a flow-cytometer and fluorescent beads.
+Note that unlike the related fitness assays, this assay does not use a selection antibiotic.
+Contents of each growth plates 2-3:
+Growth plate 2: This growth plate contains additives to initiate gene expression, but no selection antibiotic.
+Growth plate 3: This growth plate contains additives to initiate gene expression, but no selection antibiotic.
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+2/7
+
+Materials
+Starting cultures:
+glycerol stocks of each of the variants to be tested
+Reagents:
+M9 Media (ThermoFisher A1374401)
+Isopropyl β-D-1-thiogalactopyranoside (IPTG) (MilliporeSigma I5502)
+Phosphate Buffered Saline (PBS) (MilliporeSigma 806544)
+Chloramphenicol (Fisher Scientific BP904-100)
+Fluorescence Calibration Beads (Spherotech RCP-30-20A)
+Consumables:
+One 15 mL snap cap tube per variant being tested (Corning 352059)
+Three 96-well growth plates (Agilent 204799-100)
+Three gas permeable seals (Azenta P98-712)
+96-well plate for flow cytometry (Fisher Scientific 08-772-54)
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+3/7
+
+1
+For each variant to be tested, fill a 15 mL snap-cap culture tube with 5 mL of M9 media.
+Use a scraping from the glycerol stock for each clonal variant and place into its
+culture tube.
+2
+Incubate cultures overnight (18-24 hours) at 37°C with shaking  at 300 rpm.
+3
+After incubation, measure the OD600 of each overnight culture as a growth check.
+4
+Load required reagents (M9 media, additives, PBS, etc.) and growth-plates into
+automation system or liquid handler.
+5
+Prepare first growth plate by pipetting 450 μL M9 media and 50 μL cell culture into each
+well.
+6
+Apply gas-permeable seal to the first growth plate.
+7
+Incubate for 12 hours at 37°C, with fastest shaking possible in the plate reader (e.g., in
+Biotek Neo2SM reader: double orbital shaking at 807 cpm and 1 mm shaking diameter).
+Measure OD600 every 5 minutes throughout the incubation. 
+Optionally, measure fluorescence if appropriate for the plasmid circuit.
+7.1
+During incubation, prepare the second growth plate by adding 490 µL mixed media
+(media, additives  like inducers, maintenance antibiotics, etc but no selection antibiotic)
+per well to the second growth plate. 
+7.2
+Approximately ten minutes before the end of the 12-hour incubation, pre-warm the
+second growth plate. Note: Adjust pre-warming temperature and timing so that the media
+temperature in the plate is 37C at the end of the pre-warming, and so that the pre-
+warming step ends at the same time as the 12-hour incubation.
+Culture Preparation
+Quality control the overnight culture
+Prepare the automation system or liquid handler
+First Growth Plate: cells reach stationary phase
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+4/7
+
+8
+After 12-hour incubation, remove gas-permeable seal. 
+9
+Transfer 10 μL from each well of the first growth plate to corresponding wells of the
+second growth plate.
+There are some subtleties in the 96-channel pipetting required to get a reproducible
+transfer, details are described in the SI of this paper:
+https://academic.oup.com/synbio/article/7/1/ysac013/6659220 
+10
+Apply gas-permeable seal to the second growth plate.
+11
+Incubate the second growth plate for approximately 3 hours at 37°C, with fastest shaking
+possible in the plate reader (e.g., in Biotek Neo2SM reader: double orbital shaking at 807
+cpm and 1 mm shaking diameter).
+The exact incubation time for this step needs to be worked out during the testing
+phase. The time needs to be adjusted so that in the wells with the fastest growing
+cultures:
+1. The cell density always remains in mid-log phase or lower.
+2. The cell density at the end of each subsequent incubation step is constant or slightly
+decreasing. 
+11.1
+Measure OD600 and fluorescence every 5 minutes throughout the incubation. 
+Use excitation and emission wavelengths appropriate for the fluorescent protein used
+in the plasmid system.
+11.2
+During incubation, prepare the third growth plate by adding 450 µL mixed media  (media,
+additives  like inducers, maintenance antibiotics, etc but no selection antibiotic) per well
+to the third growth plate. 
+11.3
+Approximately ten minutes before the end of the 3-hour incubation, pre-warm the third
+growth plate. Note: Adjust pre-warming temperature and timing so that the media
+temperature in the plate is 37C at the end of the pre-warming, and so that the pre-
+warming step ends at the same time as the 3-hour incubation.
+12
+After incubation, remove gas-permeable seal from the second growth plate and measure
+end-point OD600.
+13
+Transfer 50 μL from each well of the second growth plate to corresponding wells of the
+third growth plate.
+Second Growth Plate
+Third Growth Plate
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+5/7
+
+14
+Apply gas-permeable seal to the third growth plate.
+15
+Incubate the third growth plate for approximately 3 hours at 37°C, with fastest shaking
+possible in the plate reader (e.g., in Biotek Neo2SM reader: double orbital shaking at 807
+cpm and 1 mm shaking diameter). 
+Use the same timing as calculated for the second growth plate.
+15.1
+Measure OD600 and fluorescence every 5 minutes throughout the incubation. 
+Use excitation and emission wavelengths appropriate for the fluorescent protein used
+in the plasmid system.
+16
+After incubation, remove gas-permeable seal from the third growth plate and perform the
+quantitative function measurements using one of the following options (Flow Cytometer
+or Plate Reader).
+17
+Transfer 5 μl of each cell sample to a well in a round-bottom 96-well plate containing 195 
+μl of PBS supplemented with 170 μg/mL chloramphenicol. 
+Note: Chloramphenicol is added to the PBS to halt production of new proteins in the E.
+coli cells to give a more stable fluorescence measurement, since it can take over one
+hour to measure all of the samples. 
+18
+Measure the fluorescence of the cells containing the selection plasmid on a flow
+cytometer equipped with a 96-well plate autosampler using an excitation wavelength and
+emission filter appropriate for the fluorescent protein in the plasmid. 
+Use fluorescence calibration beads with each batch of samples to facilitate the
+calibration of flow cytometry data to molecules of equivalent fluorophore. 
+Use automated gating to distinguish cell events and singlet cell events from other
+background events for each sample measured with cytometry, with the same gating
+strategy applied to fluorescent and non-fluorescent control cells.
+19
+Measure the fluorescence background usin a non-fluorescent control (i.e., E. coli cells of
+the same strain with a plasmid that is similar to the selection plasmid, but with no
+fluorescent protein).
+STEP CASE
+Flow cytometer fluorescent measurement
+6 steps
+Using a flow cytometer and fluorescent standard beads, perform a quantitative function measurement.
+Prep for Flow Cytometry
+Data analysis - Calculating Function
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+6/7
+
+20
+Calculate the mean fluorescence signal of the singlet cell events for all measurements of
+the non-fluorescent control cells. This is the background signal.
+21
+Calculate the mean fluorescence signal of the singlet cell events for each sample
+measured with the (fluorescent) selection plasmid.
+22
+For each sample, the quantitative Function is the mean fluorescence for that sample with
+the background signal subtracted.
+Protocol references
+Tack, D. S., Tonner, P. D., Pressman, A., Olson, N. D., Levy, S. F., Romantseva, E. F., Alperovich, N., Vasilyeva, O., &
+Ross, D. (2021). The genotype‐phenotype landscape of an allosteric protein. Molecular Systems
+Biology, 17(12). https://doi.org/10.15252/msb.202110847
+Beal J, Haddock-Angelli T, Baldwin G, Gershater M, Dwijayanti A, Storch M, et al. (2018) Quantification of bacterial
+fluorescence using independent calibrants. PLoS ONE 13(6): e0199432.
+https://doi.org/10.1371/journal.pone.0199432
+Beal, J., Farny, N.G., Haddock-Angelli, T. et al. Robust estimation of bacterial cell count from optical
+density. Commun Biol 3, 512 (2020). https://doi.org/10.1038/s42003-020-01127-5
+Jacob Beal, Cheryl A Telmer, Alejandro Vignoni, Yadira Boada, Geoff S Baldwin, Liam Hallett, Taeyang Lee, Vinoo
+Selvarajah, Sonja Billerbeck, Bradley Brown, Guo-nan Cai, Liang Cai, Edward Eisenstein, Daisuke Kiga, David
+Ross, Nina Alperovich, Noah Sprent, Jaclyn Thompson, Eric M Young, Drew Endy, Traci Haddock-Angelli,
+Multicolor plate reader fluorescence calibration, Synthetic Biology, Volume 7, Issue 1, 2022,
+ysac010, https://doi.org/10.1093/synbio/ysac010
+protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
+January 28, 2025
+7/7
