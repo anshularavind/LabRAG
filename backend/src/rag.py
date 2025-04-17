@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 load_dotenv()
 OPENAI_KEY = os.getenv("OPENAI_API_KEY")
@@ -45,6 +45,19 @@ def define_get_vectorstore() -> Chroma:
         )
     return vstore
 
-if __name__ == "__main__":
-    define_get_vectorstore()
+def get_answer(query, k):
+    vectorstore = define_get_vectorstore()
+    documents = vectorstore.similarity_search(query,k)
+    system_prompt = "Try to answer the question to the best of your ability."
+    context = "\n\n".join(f"{i+1}. {d.page_content}" for i, d in enumerate(documents))
+    user_prompt = f"\n\n{query}\nAnswer briefly."
+    prompt = system_prompt + context + user_prompt
 
+    llm = ChatOpenAI(model_name="gpt-4.1-nano")
+    response = llm.invoke(prompt)
+
+    print("Answer:", response)
+    print("Sources:", [d.metadata for d in documents])
+
+if __name__ == "__main__":
+    get_answer("Detail the first step of CRISPR", 3)
