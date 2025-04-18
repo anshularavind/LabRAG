@@ -1,5 +1,6 @@
 venv/
 baivenv/
+backend/db/
 __pycache__/
 *.pyc
 .env

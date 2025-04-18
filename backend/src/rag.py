@@ -25,7 +25,7 @@ def define_get_vectorstore_for_protocol(protocol: str) -> Chroma:
     store_dir.mkdir(parents=True, exist_ok=True)
 
     if not any(store_dir.iterdir()):
-        splitter = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=5)
+        splitter = RecursiveCharacterTextSplitter(chunk_size=250, chunk_overlap=25)
         documents = []
         ids = []
         for path in matches:
@@ -59,7 +59,7 @@ def get_answer_for_protocol(protocol: str, query: str, k: int):
 
     system_prompt = "Try to answer the question using the provided context."
     context = "\n\n".join(f"{i+1}. {d.page_content}" for i, d in enumerate(docs))
-    user_prompt = f"\n\nQuestion: {query}\nAnswer briefly."
+    user_prompt = f"\n\nQuestion: {query}\nAnswer in detail."
     prompt = f"{system_prompt}\n\nContext:\n{context}{user_prompt}"
 
     llm = ChatOpenAI(model_name="gpt-4.1-nano")
