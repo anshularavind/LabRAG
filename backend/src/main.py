@@ -78,9 +78,10 @@ def citation_endpoint(fileName):
     doi = dois[fileName]
     apiUrl = f"https://citation.doi.org/format?doi={doi}";
     response = requests.get(apiUrl)
+    articleUrl = f"https://doi.org/{doi}"
     try:
         response.raise_for_status()
-        return response.text[3:]
+        return { "citation" : response.text[3:], "url" : articleUrl }
     except:
         return "DOI not available for this protocol."
     

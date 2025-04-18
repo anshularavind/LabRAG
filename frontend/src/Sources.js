@@ -39,6 +39,10 @@ const Sources = ({ sources }) => {
         loadCitations();
     }, [sources]);
 
+    // Don’t even try to render the list until we have every citation
+    if (citations.length !== sources.length) {
+        return <div>Loading citations…</div>;
+    }
 
     return (
         <div>
@@ -46,7 +50,7 @@ const Sources = ({ sources }) => {
             <ul>
                 {sources.map((s, i) => (
                     <li key={i}>
-                        {citations[i]} (chunk {s.chunk_index})
+                        <a href={citations[i].url}>{citations[i].citation}</a> (chunk {s.chunk_index})
                     </li>
                 // <li key={i}>{s.source} (chunk {s.chunk_index})</li>
                 ))}
