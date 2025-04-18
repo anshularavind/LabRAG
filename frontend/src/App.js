@@ -41,37 +41,58 @@ function App() {
         <p>AI platform that acts as a basic biology/biotech laboratory assistant that allows users to ask questions about a particular lab procedure and modify lab procedures based on available equipment. All sources are thoughtfully cited, with the author and the university/laboratory that created the base protocol, making LabRAG a project that maintains the highest standard of ethical and responsible AI.</p>
       </subheader>
       <main className="App-main">
-        <div className="input-group">
-          <input
-            className="input"
-            placeholder="Protocol Keyword"
-            value={protocol}
-            onChange={(e) => setProtocol(e.target.value)}
-          />
-          <input
-            className="input"
-            placeholder="Query"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-          <input
-            type="number"
-            className="input k-input"
-            placeholder="Source Count"
-            min={1}
-            value={k}
-            onChange={(e) => setK(Number(e.target.value))}
-          />
+        <div className="sidebar">
+          <div className="field">
+            <label htmlFor="protocol">Protocol Keyword</label>
+            <input
+              id="protocol"
+              className="input"
+              value={protocol}
+              onChange={e => setProtocol(e.target.value)}
+            />
+          </div>
+
+          <div className="field">
+            <label htmlFor="query">Query</label>
+            <input
+              id="query"
+              className="input"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+            />
+          </div>
+
+          <div className="field">
+            <label htmlFor="k">Source Count</label>
+            <input
+              id="k"
+              type="number"
+              className="input k-input"
+              min={1}
+              value={k}
+              onChange={e => setK(Number(e.target.value))}
+            />
+          </div>
+
           <button className="btn" onClick={handleAsk}>
             Ask
           </button>
         </div>
+
         <section className="response">
           <h3>Answer</h3>
           <p>{answer}</p>
           <Sources sources={sources} />
         </section>
       </main>
+      <footer className="App-footer">
+          <p>© 2025 LabRAG. All rights reserved.</p>
+          <nav>
+            <a href="#">About</a> | 
+            <a href="#">Docs</a> | 
+            <a href="#">Contact</a>
+          </nav>
+      </footer>
     </div>
   );
 }
