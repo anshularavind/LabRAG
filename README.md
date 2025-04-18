@@ -4,6 +4,12 @@ AI platform that acts as a basic biology/biotech laboratory assistant that allow
 
 To run:
 
+Install all necessary requirements
+```
+pip install -r requirements.txt
+```
+Set up environment variables.
+
 Create a new folder called db in the backend.
 
 Then run these commands (to start the backend)
