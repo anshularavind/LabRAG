@@ -1,4 +1,5 @@
 import './App.css';
+import Sources from './Sources';
 import { useState } from 'react';
 
 function App() {
@@ -68,12 +69,7 @@ function App() {
         <section className="response">
           <h3>Answer</h3>
           <p>{answer}</p>
-          <h4>Sources</h4>
-          <ul>
-            {sources.map((s, i) => (
-              <li key={i}>{s.source} (chunk {s.chunk_index})</li>
-            ))}
-          </ul>
+          <Sources sources={sources} />
         </section>
       </main>
     </div>

@@ -5,6 +5,7 @@ import os
 import requests
 from urllib.parse import urlencode
 from rag import get_answer_for_protocol
+from constants import dois
 
 app = FastAPI()
 
@@ -71,3 +72,15 @@ def answer_endpoint(
         raise HTTPException(status_code=404, detail=str(ve))
     except Exception as e:
         raise HTTPException(status_code=500, detail="An internal error occured: " + str(e))
+    
+@app.get("/cite")
+def citation_endpoint(fileName):
+    doi = dois[fileName]
+    apiUrl = f"https://citation.doi.org/format?doi={doi}";
+    response = requests.get(apiUrl)
+    try:
+        response.raise_for_status()
+        return response.text[3:]
+    except:
+        return "DOI not available for this protocol."
+    
