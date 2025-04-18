@@ -15,13 +15,20 @@ persist_dir = Path(__file__).resolve().parent.parent / "db"
 
 EMBEDDINGS = OpenAIEmbeddings()
 
-def define_get_vectorstore() -> Chroma:
-    txt_paths = list(data_dir.glob("*.txt"))
-    if not persist_dir.exists() or not any(persist_dir.iterdir()):
+
+def define_get_vectorstore_for_protocol(protocol: str) -> Chroma:
+    matches = [p for p in data_dir.glob("*.txt") if protocol.lower() in p.stem.lower()]
+    if not matches:
+        raise ValueError(f"No protocol files found containing '{protocol}' in {data_dir}")
+
+    store_dir = persist_dir / protocol.lower()
+    store_dir.mkdir(parents=True, exist_ok=True)
+
+    if not any(store_dir.iterdir()):
         splitter = RecursiveCharacterTextSplitter(chunk_size=30, chunk_overlap=5)
         documents = []
         ids = []
-        for path in txt_paths:
+        for path in matches:
             text = path.read_text(encoding="utf-8")
             chunks = splitter.split_text(text)
             for idx, chunk in enumerate(chunks):
@@ -34,30 +41,37 @@ def define_get_vectorstore() -> Chroma:
             documents=documents,
             ids=ids,
             embedding=EMBEDDINGS,
-            persist_directory=str(persist_dir),
-            collection_name="docs"
+            persist_directory=str(store_dir),
+            collection_name=protocol.lower()
         )
     else:
         vstore = Chroma(
-            persist_directory=str(persist_dir),
+            persist_directory=str(store_dir),
             embedding_function=EMBEDDINGS,
-            collection_name="docs"
+            collection_name=protocol.lower()
         )
     return vstore
 
-def get_answer(query, k):
-    vectorstore = define_get_vectorstore()
-    documents = vectorstore.similarity_search(query,k)
-    system_prompt = "Try to answer the question to the best of your ability."
-    context = "\n\n".join(f"{i+1}. {d.page_content}" for i, d in enumerate(documents))
-    user_prompt = f"\n\n{query}\nAnswer briefly."
-    prompt = system_prompt + context + user_prompt
+
+def get_answer_for_protocol(protocol: str, query: str, k: int):
+    vstore = define_get_vectorstore_for_protocol(protocol)
+    docs = vstore.similarity_search(query, k)
+
+    system_prompt = "Try to answer the question using the provided context."
+    context = "\n\n".join(f"{i+1}. {d.page_content}" for i, d in enumerate(docs))
+    user_prompt = f"\n\nQuestion: {query}\nAnswer briefly."
+    prompt = f"{system_prompt}\n\nContext:\n{context}{user_prompt}"
 
     llm = ChatOpenAI(model_name="gpt-4.1-nano")
-    response = llm.invoke(prompt)
+    answer = llm.invoke(prompt)
 
-    print("Answer:", response)
-    print("Sources:", [d.metadata for d in documents])
+    sources = [{"source": d.metadata["source"], "chunk_index": d.metadata["chunk_index"]} for d in docs]
+    return {"answer": answer, "sources": sources}
+
 
 if __name__ == "__main__":
-    get_answer("Detail the first step of CRISPR", 3)
+    result = get_answer_for_protocol("Transfection", 
+                                    "What would I do if i do not have a 96 well plate", 
+                                    k=3)
+    print("Answer:", result["answer"])
+    print("Sources:", result["sources"])

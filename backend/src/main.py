@@ -1,10 +1,10 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse, HTMLResponse
 import os
 import requests
 from urllib.parse import urlencode
-
+from rag import get_answer_for_protocol
 
 app = FastAPI()
 
@@ -57,3 +57,17 @@ async def callback(request: Request):
         "access_token": token_data["access_token"],
         "full_response": token_data
     }
+
+@app.get("/answer")
+def answer_endpoint(
+    protocol: str = Query(..., description="Protocol keyword to filter by (e.g. 'elisa')"),
+    query:   str = Query(..., description="Question about the protocol specified"),
+    k:       int = Query(3,   description="Number of source chunks to retrieve")
+):
+    try:
+        result = get_answer_for_protocol(protocol, query, k)
+        return result
+    except ValueError as ve:
+        raise HTTPException(status_code=404, detail=str(ve))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="An internal error occured: " + str(e))
