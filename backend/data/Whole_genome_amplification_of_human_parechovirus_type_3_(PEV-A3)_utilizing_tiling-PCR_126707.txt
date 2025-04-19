@@ -19,6 +19,7 @@ We use this protocol and it's working
 Created: April 15, 2025
 Last Modified: April 15, 2025
 Protocol Integer ID: 126707
+Keywords: Parechovirus, Genome, PCR~
 Abstract
 The procol allows whole genome amplification of PEV-A3, prior to next generation library preparation and
 sequencing. Suitable for Nanopore and Illumina sequencing as well.

@@ -55,7 +55,7 @@ April 8, 2025
 1/19
 
 Protocol Integer ID: 126391
-Keywords: Monkeypox, MPXV, Amplicon sequencing, PrimalSeq, hMPXV~
+Keywords: Monkeypox, PCR, Sequencing~
 Disclaimer
 DISCLAIMER – FOR INFORMATIONAL PURPOSES ONLY; USE AT YOUR OWN RISK
 The protocol content here is for informational purposes only and does not constitute legal, medical, clinical,

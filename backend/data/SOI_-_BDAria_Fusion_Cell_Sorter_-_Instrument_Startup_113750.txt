@@ -16,7 +16,7 @@ We use this protocol and it's working
 Created: December 04, 2024
 Last Modified: March 17, 2025
 Protocol Integer ID: 113750
-Keywords: Flow Cytometry, FACSAria Fusion, Cell Sorting, Core Facility~
+Keywords: Cytometry, Cell_Sorting, Fusion~
 1/27
 
 Disclaimer

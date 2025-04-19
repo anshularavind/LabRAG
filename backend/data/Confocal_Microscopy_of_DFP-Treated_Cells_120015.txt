@@ -18,7 +18,7 @@ We use this protocol and it's working
 Created: February 05, 2025
 Last Modified: March 21, 2025
 Protocol Integer ID: 120015
-Keywords: ASAPCRN~
+Keywords: Confocal, Microscopy, DFP~
 Funders Acknowledgements:
 Aligning Science Across Parkinson’s (ASAP)
 Grant ID: ASAP-000350

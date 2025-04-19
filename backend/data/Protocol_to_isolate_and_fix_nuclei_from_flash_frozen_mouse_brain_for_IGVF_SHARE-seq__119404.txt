@@ -22,7 +22,7 @@ We use this protocol and it's working
 Created: February 01, 2025
 Last Modified: February 01, 2025
 Protocol Integer ID: 119404
-Keywords: fixation, nuclei fixation, SHARE-seq, mouse brain, nuclei isolation, Mouse~
+Keywords: Nuclei, IGVF~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.5jyl8dq29g2w/v1
 February 1, 2025
 1/9

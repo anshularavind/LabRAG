@@ -18,6 +18,7 @@ We use this protocol and it's working
 Created: February 22, 2025
 Last Modified: February 22, 2025
 Protocol Integer ID: 123201
+Keywords: CRISPR, Cas9, hiPSC~
 Abstract
 This protocol is adapted from Skarnes et al., 2019 and describes the steps to follow for knocking-in point mutation
 via CRISP/Cas9 in humain inducible pluripotent cells (hiPSC)
