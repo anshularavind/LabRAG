@@ -19,6 +19,7 @@ Protocol status: Working
 Created: April 02, 2017
 Last Modified: February 07, 2018
 Protocol Integer ID: 5445
+Keywords: Euplotes, Transfection, FuGene~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.hjdb4i6
 April 1, 2017
 1/3

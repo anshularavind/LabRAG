@@ -22,7 +22,7 @@ We use this protocol and it’s working
 Created: March 09, 2020
 Last Modified: April 12, 2022
 Protocol Integer ID: 33941
-Keywords: Transformation , Bacterial, C3019I, C3019, C3019H~
+Keywords: Transformation, Bacteria, C3019I, C3019, C3019H~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.zewov12ogr24/v6
 April 11, 2022
 1/7

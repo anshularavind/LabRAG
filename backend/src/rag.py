@@ -16,9 +16,15 @@ persist_dir = Path(__file__).resolve().parent.parent / "db"
 
 EMBEDDINGS = OpenAIEmbeddings()
 
+def is_substring_in_list(substring, string_list):
+    substring_lower = substring.lower()
+    for s in string_list:
+        if substring_lower in s.lower():
+            return True
+    return False
 
 def define_get_vectorstore_for_protocol(protocol: str) -> Chroma:
-    matches = [p for p in data_dir.glob("*.txt") if protocol.lower() in p.stem.lower()]
+    matches = [p for p in data_dir.glob("*.txt") if protocol.lower() in p.stem.lower() or is_substring_in_list(protocol, globals.categories[p.stem])]
     # matches = [p for p in globals.keyword_list if protocol.lower() in p.lower()]
     if not matches:
         raise ValueError(f"No protocol files found containing '{protocol}' in {data_dir}")

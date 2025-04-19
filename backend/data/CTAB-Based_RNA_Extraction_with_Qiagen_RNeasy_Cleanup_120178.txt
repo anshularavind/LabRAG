@@ -19,10 +19,7 @@ We use this protocol and it's working
 Created: February 13, 2025
 Last Modified: February 15, 2025
 Protocol Integer ID: 120178
-Keywords: RNA extraction, cannabis RNA isolation, CTAB method, Qiagen RNeasy cleanup, plant RNA purification, secondary
-metabolites removal, high-quality RNA isolation, polysaccharide-rich plant RNA, RNA-seq sample preparation, RT-qPCR RNA
-extraction, column clogging prevention, modified RNA extraction protocol, medicinal plant RNA isolation, chloroform:isoamyl
-alcohol RNA extraction, CTAB + silica column purification~
+Keywords: RNA_Extraction, Qiagen~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
 February 14, 2025
 1/11

@@ -18,7 +18,7 @@ We use this protocol and it's working
 Created: April 25, 2024
 Last Modified: January 28, 2025
 Protocol Integer ID: 119208
-Keywords: Deep mutational scanning, protein sequence-function relationships, fitness landscape, laboratory automation, flow~
+Keywords: Singleplex~
 cytometry
 protocols.io | https://dx.doi.org/10.17504/protocols.io.dm6gpzwx8lzp/v3
 January 28, 2025
