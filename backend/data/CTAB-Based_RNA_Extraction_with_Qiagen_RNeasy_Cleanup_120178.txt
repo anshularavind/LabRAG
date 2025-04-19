@@ -22,7 +22,7 @@ Protocol Integer ID: 120178
 Keywords: RNA extraction, cannabis RNA isolation, CTAB method, Qiagen RNeasy cleanup, plant RNA purification, secondary
 metabolites removal, high-quality RNA isolation, polysaccharide-rich plant RNA, RNA-seq sample preparation, RT-qPCR RNA
 extraction, column clogging prevention, modified RNA extraction protocol, medicinal plant RNA isolation, chloroform:isoamyl
-alcohol RNA extraction, CTAB + silica column purification~
+alcohol RNA extraction, CTAB + silica column purification
 protocols.io | https://dx.doi.org/10.17504/protocols.io.261gerk8wl47/v1
 February 14, 2025
 1/11

@@ -20,7 +20,7 @@ We use this protocol and it's working
 Created: February 26, 2025
 Last Modified: February 27, 2025
 Protocol Integer ID: 123399
-Keywords: Parse Biosciences, snRNA-seq, Split-seq, Evercode WT Mega, Evercode, scRNA-seq, Single cell, Parse Bio, Parse, Mortazavi, UCI, IGVF, Mouse~
+Keywords: Parse Biosciences, snRNA-seq, Split-seq, Evercode WT Mega, Evercode, scRNA-seq, Single cell, Parse Bio, Parse, Mortazavi, UCI, IGVF, Mouse
 protocols.io | https://dx.doi.org/10.17504/protocols.io.14egn952yl5d/v1
 February 26, 2025
 1/45

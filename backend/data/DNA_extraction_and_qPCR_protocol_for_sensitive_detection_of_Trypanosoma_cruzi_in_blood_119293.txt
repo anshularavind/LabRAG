@@ -25,7 +25,7 @@ We use this protocol and it's working
 Created: January 29, 2025
 Last Modified: April 16, 2025
 Protocol Integer ID: 119293
-Keywords: Trypanosoma cruzi, PCR, Chagas disease, deep-sampling, qPCR, DNA extraction, fragmentation~
+Keywords: Trypanosoma cruzi, PCR, Chagas disease, deep-sampling, qPCR, DNA extraction, fragmentation
 protocols.io | https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1
 April 16, 2025
 1/11
