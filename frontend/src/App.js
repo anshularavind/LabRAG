@@ -76,12 +76,51 @@ function App() {
         <div className="sidebar">
           <div className="field">
             <label htmlFor="protocol">Protocol Keyword</label>
-            <input
-              id="protocol"
-              className="input"
-              value={protocol}
-              onChange={e => setProtocol(e.target.value)}
-            />
+            {/* Autocomplete form */}
+            <form onSubmit={handleSubmit} autoComplete="off">
+              <div
+                className="autocomplete"
+                style={{ position: 'relative', width: 300 }}
+              >
+                <input
+                  className="input"
+                  value={protocol}
+                  onChange={handleProtocolChange}
+                />
+
+                {/* Suggestions dropdown */}
+                {suggestions.length > 0 && (
+                  <div
+                    className="autocomplete-items"
+                    style={{
+                      position: 'absolute',
+                      top: '100%',
+                      left: 0,
+                      right: 0,
+                      border: '1px solid #ccc',
+                      background: '#fff',
+                      zIndex: 10,
+                      maxHeight: 200,
+                      overflowY: 'auto',
+                    }}
+                  >
+                    {suggestions.map((item, idx) => (
+                      <div
+                        key={idx}
+                        onMouseDown={(e) => e.preventDefault()} // keep focus
+                        onClick={() => {
+                          setProtocol(item);
+                          setSuggestions([]);
+                        }}
+                        style={{ padding: '8px', cursor: 'pointer' }}
+                      >
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </form>
           </div>
 
           <div className="field">
