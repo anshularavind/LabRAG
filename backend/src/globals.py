@@ -25,9 +25,12 @@ dois = {
     "Whole_genome_amplification_of_human_parechovirus_type_3_(PEV-A3)_utilizing_tiling-PCR_126707.txt" : "10.17504/protocols.io.q26g758q3lwz/v1"
 }
 
+categories = {}
+
 keyword_list = []
 
 def load_keywords():
+    global categories
     global keyword_list
     keyword_set = set()
     for filename in os.listdir("../data"):
@@ -39,6 +42,7 @@ def load_keywords():
             keywords_str = content[start+10:start+end+10]
             keywords_str = keywords_str.replace("\n", "")
             keywords = keywords_str.split(", ")
+            categories[filename[:-4]] = keywords
             # keyword_subset = set(keywords)
             keyword_set.update(keywords)
     keyword_set.remove("")
