@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import globals
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
@@ -18,6 +19,7 @@ EMBEDDINGS = OpenAIEmbeddings()
 
 def define_get_vectorstore_for_protocol(protocol: str) -> Chroma:
     matches = [p for p in data_dir.glob("*.txt") if protocol.lower() in p.stem.lower()]
+    # matches = [p for p in globals.keyword_list if protocol.lower() in p.lower()]
     if not matches:
         raise ValueError(f"No protocol files found containing '{protocol}' in {data_dir}")
 

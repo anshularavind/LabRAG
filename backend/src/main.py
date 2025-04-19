@@ -1,13 +1,21 @@
 from fastapi import FastAPI, Request, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse, HTMLResponse
+from contextlib import asynccontextmanager
 import os
 import requests
 from urllib.parse import urlencode
 from rag import get_answer_for_protocol
-from constants import dois
+import globals
+import re
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Load keywords when the API starts.
+    globals.load_keywords()
+    yield
+
+app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(CORSMiddleware, 
                    allow_origins=["http://localhost:3000"],
@@ -75,7 +83,7 @@ def answer_endpoint(
     
 @app.get("/cite")
 def citation_endpoint(fileName):
-    doi = dois[fileName]
+    doi = globals.dois[fileName]
     apiUrl = f"https://citation.doi.org/format?doi={doi}";
     response = requests.get(apiUrl)
     articleUrl = f"https://doi.org/{doi}"
@@ -85,3 +93,14 @@ def citation_endpoint(fileName):
     except:
         return "DOI not available for this protocol."
     
+@app.get("/keywords")
+def keywords_endpoint(search):
+    pattern = re.compile(re.escape(search), re.IGNORECASE)
+    matching = []
+    for keyword in globals.keyword_list:
+        if pattern.search(keyword):
+            matching.append(keyword)
+            if len(matching) >= 5:
+                break
+
+    return matching

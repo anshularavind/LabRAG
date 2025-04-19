@@ -1,3 +1,5 @@
+import os
+
 dois = {
     "_dPCR_SOP_for_Quantification_of_Antibiotic_Resistance_Genes_121916.txt" : "10.17504/protocols.io.5qpvo96wzv4o/v1",
     "After-LCM_(Laser-Capture_Microdissection)_procedure_123238.txt" :  "10.17504/protocols.io.e6nvwb3wwvmk/v1",
@@ -22,3 +24,22 @@ dois = {
     "SOI_-_BDAria_Fusion_Cell_Sorter_-_Instrument_Startup_113750.txt" : "",
     "Whole_genome_amplification_of_human_parechovirus_type_3_(PEV-A3)_utilizing_tiling-PCR_126707.txt" : "10.17504/protocols.io.q26g758q3lwz/v1"
 }
+
+keyword_list = []
+
+def load_keywords():
+    global keyword_list
+    keyword_set = set()
+    for filename in os.listdir("../data"):
+        file_path = os.path.join("../data", filename)
+        with open(file_path, 'r') as file:
+            content = file.read()
+            start = content.find("Keywords: ")
+            end = content[start+10:].find("~")
+            keywords_str = content[start+10:start+end+10]
+            keywords_str = keywords_str.replace("\n", "")
+            keywords = keywords_str.split(", ")
+            # keyword_subset = set(keywords)
+            keyword_set.update(keywords)
+    keyword_set.remove("")
+    keyword_list = sorted(keyword_set)
