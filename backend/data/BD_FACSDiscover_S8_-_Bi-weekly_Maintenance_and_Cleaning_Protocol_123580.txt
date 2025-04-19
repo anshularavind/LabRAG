@@ -17,7 +17,7 @@ We are still developing and optimizing this protocol
 Created: February 28, 2025
 Last Modified: March 11, 2025
 Protocol Integer ID: 123580
-Keywords: BD, FACSDiscover S8, Imaging, Cell sorting, Flow Cytometry, Maintenance
+Keywords: BD, FACSDiscover S8, Imaging, Cell sorting, Flow Cytometry, Maintenance~
 1/5
 
 Disclaimer

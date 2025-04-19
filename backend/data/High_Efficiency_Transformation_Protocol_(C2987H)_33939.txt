@@ -21,7 +21,7 @@ We use this protocol and it’s working
 Created: March 08, 2020
 Last Modified: February 15, 2022
 Protocol Integer ID: 33939
-Keywords: Transformation , Bacteria, C2987H,
+Keywords: Transformation , Bacteria, C2987H~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.bddti26n
 February 15, 2022
 1/5

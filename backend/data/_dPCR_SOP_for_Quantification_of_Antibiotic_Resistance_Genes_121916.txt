@@ -20,8 +20,7 @@ We use this protocol and it's working
 Created: February 18, 2025
 Last Modified: April 04, 2025
 Protocol Integer ID: 121916
-Keywords: dPCR, Quantification, Antibiotic resistance genes, Tetracycline, QIAcuity, Probe, Eva Green, digital PCR, digital
-polymerase chain reaction
+Keywords: dPCR, Quantification, Antibiotic resistance genes, Tetracycline, QIAcuity, Probe, Eva Green, digital PCR, digital polymerase chain reaction~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.5qpvo96wzv4o/v1
 April 4, 2025
 1/19

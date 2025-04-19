@@ -19,7 +19,7 @@ We use this protocol and it's working
 Created: February 23, 2025
 Last Modified: February 26, 2025
 Protocol Integer ID: 123248
-Keywords: ASAPCRN, CRISPR knockout, Synthego guide RNAs, electroporation
+Keywords: ASAPCRN, CRISPR knockout, Synthego guide RNAs, electroporation~
 Funders Acknowledgements:
 Aligning Science Across Parkinson's
 Grant ID: 000463

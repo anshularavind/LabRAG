@@ -19,7 +19,7 @@ We use this protocol and it's working.
 Created: January 21, 2025
 Last Modified: January 21, 2025
 Protocol Integer ID: 118815
-Keywords: ROS, Neutrophils
+Keywords: ROS, Neutrophils~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.n2bvj9j3blk5/v1
 January 21, 2025
 1/6
