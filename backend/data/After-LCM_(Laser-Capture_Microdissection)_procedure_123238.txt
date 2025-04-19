@@ -36,7 +36,7 @@ February 25, 2025
 Keywords: mandibular condylar cartilage (MCC), laser-capture micro dissection (LCM), homogenous cell populations, zone-
 speciic cell populations, specimen freezing and cryosectioning, staining and dehydration of the frozen tissue sections, RNA
 extraction and isolation, evaluation of LCM-RNA integrity, linear amplification of LCM-RNA samples, labeling and fragmentation
-of amplified aRNA
+of amplified aRNA~
 Abstract
 This protocol describes after-LCM (Laser-Capture Microdissection) procedure.
 Materials

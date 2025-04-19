@@ -29,7 +29,7 @@ We use this protocol and it's working
 Created: June 06, 2024
 Last Modified: February 24, 2025
 Protocol Integer ID: 101284
-Keywords: Antibody, Pig, Swine, Porcine, Resin, Chromatography, IgA, IgG, Isolation, High Throughput
+Keywords: Antibody, Pig, Swine, Porcine, Resin, Chromatography, IgA, IgG, Isolation, High Throughput~
 protocols.io | https://dx.doi.org/10.17504/protocols.io.yxmvmee6ng3p/v1
 February 24, 2025
 1/6
